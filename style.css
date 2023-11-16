@@ -25,9 +25,13 @@
     border-radius: 20px;
 }
 
-#header-search-bar-text {
+#header-search-bar-input {
     font-size: 12px;
     font-weight: 400px;
     opacity: .5;
     flex-grow: 1;
+}
+
+#header-search-bar-input:focus {
+    outline: none;
 }
