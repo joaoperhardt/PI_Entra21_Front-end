@@ -1,10 +1,10 @@
-body {
+/* body {
     display: flex;
     margin: 0 auto;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-}
+} */
 
 #header {
     width: 100%;
@@ -15,8 +15,8 @@ body {
 
 #header-content {
     justify-self: center;
-    padding-left: 28px;
-    padding-right: 28px;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 
 #header-search-bar {
