@@ -34,15 +34,35 @@
 
     <div class="main-div h-[100vh] flex">
         <div id="product-div" class="">
-            <div id="product-image border-1">
+            <div id="product-image" class="p-2">
                 <img src="./assets/images/Imagem do produto.png" alt="Product image">
             </div>
-            <div id="product-info">
-                <p id="product-name" class="mt-4 text-3xl ">ABBA Gold Vinil</p>
-                <p id="product-price" class="mt-4 text-5xl font-bold">R$ 450,00</p>
-                <span id="discount-text"></span>
+            <div id="product-info" class="p-2">
+                <p id="product-name" class="mt-4 text-3xl">ABBA Gold Vinil</p>
+                <p class="text-2xl text-purple mt-4">R$ 500,00</p>
+                <span id="product-price" class="flex flex-grid items-center mt-2">
+                    <p class=" text-5xl font-bold">R$ 450,00</p>
+                    <span class="ml-4 items-center">
+                        <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
+                    </span>
+                </span>
+                <div class="mt-4 justify-center">
+                    <img class="h-12" src="./assets/images/image 2.png" alt="volunteers">
+                    <p class="">Voluntários</p>
+                </div>
+                <!-- <span id="product-rating" class="mt-4 flex flex-grid items-center">
+                    <p class="text-2xl mr-2">5,0</p>
+                    <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
+                    <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
+                    <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
+                    <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
+                    <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
+                </span> -->
             </div>
-            <div id="product-buy-field"></div>
+            <div id="product-buy-field" class="mt-4px">
+                <button class="" type="submit">Adicionar ao carrinho</button>
+            </div>
+            
             <div id="product-volunteers"></div>
             <div id="product-store"></div>
         </div>

@@ -32,3 +32,8 @@
 #header-search-bar-input:focus {
     outline: none;
 }
+
+#discount-tag {
+    background-color: #B35FD0;
+    border-radius: 8px;
+}
