@@ -1,3 +1,4 @@
+
 #header {
     display: flex;
     align-items: center;
@@ -30,6 +31,8 @@
     height: 40px;
     width: 128px;
     border-radius: 10%;
+    width: 321px;
+    border-radius: 5%;
 }
 #form1{
     display: flex;
@@ -50,12 +53,16 @@ label{
     padding: 2%;
 }
 #data{
-       height: 40px;
+    height: 40px;
     background-color: rgba(217, 217, 217, 1);
     border-radius: 4%;
-    
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
 }
-
+#buscar-cep{
+    color: blue;
+    font-size: xx-small;
+    text-decoration: underline;
+    margin-left: 69%;
+}
