@@ -60,8 +60,22 @@
                 </span> -->
             </div>
             <div id="product-buy-field" class="mt-4 flex flex-col p-4">
-                <button id="add-to-cart-button" class="px-4 py-2 h-[48px] w-[360px]" type="submit">Adicionar ao carrinho</button>
-                <button id="buy-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit">Comprar</button>
+                <div class="flex flex-row items-center">
+                    <span id="product-quantity-span" class=" flex flex-row items-center">
+                        <label class="text-xl" for="product-quantity">Quantidade</label>
+                        <span id="product-quantity-setter" class="">
+                            <select class="text-xl font-bold ml-2 w-[62px] h-[40px]" name="product-quantity">
+                                <option class="" value="1">1</option>
+                                <option class="" value="2">2</option>
+                            </select>
+                        </span>
+                    </span>
+                    <span class="flex flex-row ml-14">
+                        <p class="text-xl">Frete: <p class="text-xl">R$ 15,00</p></p>
+                    </span>    
+                </div>
+                <button id="add-to-cart-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit"><p class="text-2xl">Adicionar ao carrinho</p></button>
+                <button id="buy-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit"><p class="text-2xl text-white">Comprar</p></button>
             </div>
 
             <div id="product-volunteers"></div>

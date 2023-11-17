@@ -38,8 +38,22 @@
     border-radius: 8px;
 }
 
+#product-quantity-setter select{
+    background: #d9d9d9;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    text-align: center;
+}
+
 #product-buy-field {
     justify-content: center;
+}
+
+#product-buy-field button {
+    height: 48px;
+    width: 360px;
+    padding: 2px 4px;
+    margin-top: 12px;
 }
 
 #add-to-cart-button {
@@ -48,5 +62,6 @@
 }
 
 #buy-button {
+    border-radius: 4px;
     background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
 }
