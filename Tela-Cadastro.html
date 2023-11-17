@@ -9,12 +9,43 @@
 </head>
 <body>
     <header id="header">
-        <div class="content flex"><img id="logo" src="./assets/WhatsApp Image 2023-11-10 at 21.29.30.jpeg" alt="logo"></div>
+        <div class="content flex item-center justify-center"><img id="logo" src="./assets/MicrosoftTeams-image.png" alt="logo"></div>
     </header>
-    <div>
-        <div><h1 id="cadastro-tittle">Cadastro de Usuário</h1></div>
-        <div><h2>Nome Completo</h2></div>
-        <div class="box-border hover:box-content"></div>
+   
+    <div id="formulário">
+        <div id="title-cadastro" class="font-bold"><h1>Cadastro de Usuário</h1></div>
+        <form id="form1" action="">
+            <div>
+                <div>
+                    <label for="nome" class="font-bold w-80">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div>
+                    <label for="data" class="font-bold">Data de nascimento</label>
+                    <input type="date" id="data">
+                </div>
+                <div>
+                    
+                    <label for="cep" class="font-bold">CEP</label>
+                    <input type="text" id="cep" placeholder="XXXXX-XXX">
+                    <a href="">Não sei meu cep</a>
+                </div>
+                <div>
+                    <label for="telefone" class="font-bold">Telefone</label>
+                    <input type="text" id="telefone" placeholder="+55 (XX) XXXXX-XXXX">
+                </div>
+                <div>
+                    <label for="email" class="font-bold">E-mail</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label  for="password" class="font-bold">Senha</label>
+                    <input type="password" id="password">
+                </div>
+                
+                    <button class="font-bold" id="button-continuar" submit="">Continuar</button>
+            </div>        
+        </form>
     </div>
 </body>
 </html>
