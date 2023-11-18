@@ -59,10 +59,10 @@
                     <img class="h-8 mr-1" src="./assets/images/Star 1.png" alt="star rating">
                 </span> -->
             </div>
-            <div id="product-buy-field" class="mt-4 flex flex-col p-4">
-                <div class="flex flex-row items-center">
+            <div id="product-buy-field" class="flex flex-col p-4">
+                <div class="flex flex-row justify-between items-center">
                     <span id="product-quantity-span" class=" flex flex-row items-center">
-                        <label class="text-xl" for="product-quantity">Quantidade</label>
+                        <label class="text-xl" for="product-quantity">Quantidade:</label>
                         <span id="product-quantity-setter" class="">
                             <select class="text-xl font-bold ml-2 w-[62px] h-[40px]" name="product-quantity">
                                 <option class="" value="1">1</option>
@@ -70,19 +70,58 @@
                             </select>
                         </span>
                     </span>
-                    <span class="flex flex-row ml-14">
-                        <p class="text-xl">Frete: <p class="text-xl">R$ 15,00</p></p>
-                    </span>    
+                    <span class="flex flex-row float-right">
+                        <p class="text-xl">Frete:
+                        <p class="text-xl font-bold">R$ 15,00</p>
+                        </p>
+                    </span>
                 </div>
-                <button id="add-to-cart-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit"><p class="text-2xl">Adicionar ao carrinho</p></button>
-                <button id="buy-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit"><p class="text-2xl text-white">Comprar</p></button>
+                <div>
+                    <button id="add-to-cart-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit">
+                        <p class="text-2xl">Adicionar ao carrinho</p>
+                    </button>
+                    <button id="buy-button" class="px-4 py-2 h-[48px] w-[360px] mt-4" type="submit">
+                        <p class="text-2xl text-white">Comprar</p>
+                    </button>
+                </div>
+                <div id="product-localizer">
+                    <div class="mt-2">
+                        <p>Entregar em:</p>
+                        <div class="flex flex-row">
+                            <i class="las la-map-marker p-1"></i>
+                            <p>SC, Gaspar, Santa Teresinha, R. Barão do Rio Branco, 13 </p>
+                        </div>
+                    </div>
+                    <div id="product-store" class="mt-4">
+                        <p>Loja anunciante:</p>
+                        <div class="flex flex-row">
+                            <i class="las la-store-alt p-1"></i>
+                            <span class="text-sm">
+                                <p>Bnu Vinis</p>
+                                <p>Santa Catarina, Blumenau, Fortaleza, R. Eclair Martin da Silva, 256</p>
+                            </span>
+                        </div>
+                    </div>  
+                </div>
+                
             </div>
 
             <div id="product-volunteers"></div>
-            <div id="product-store"></div>
-        </div>
 
-        <div id="product-description"></div>
+            
+            <div id="product-description" class="p-4">
+                <p class="text-xl font-bold">Descrição:</p>
+                <p class="mt-4 texl-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. 
+                    Velit laoreet id donec ultrices tincidunt. Convallis posuere morbi leo urna. 
+                    Faucibus scelerisque eleifend donec pretium. Quis viverra nibh cras pulvinar mattis nunc. 
+                    Dictum fusce ut placerat orci nulla pellentesque. Id porta nibh venenatis cras sed felis eget. 
+                    Vitae nunc sed velit dignissim sodales ut eu. Dignissim diam quis enim lobortis 
+                    scelerisque fermentum dui faucibus. Sit amet porttitor eget dolor morbi non arcu risus quis. 
+                    Scelerisque viverra mauris in aliquam sem fringilla.</p>
+            </div>
+        </div>
     </div>
 
     <script src="produto.js"></script>
