@@ -6,6 +6,7 @@
 
 #header {   
     height: 92px;
+   
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
     align-content: center;
 }
@@ -31,10 +32,7 @@
     outline: none;
 }
 
-#destaque{
-    font-size: 18px;
-    
-}
+
 
 #modelo{
 background-color: #fef1eb;
@@ -46,3 +44,17 @@ background-color: #fef1eb;
     height: 150px;
     margin-right: 100px;
 }
+
+#menu-content {
+    background-color: rgba(65, 72, 129, 1);
+    opacity: 2;
+}
+
+#container-menu{
+    color: #fef1eb;
+}
+
+
+
+
+

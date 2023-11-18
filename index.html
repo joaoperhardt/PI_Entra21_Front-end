@@ -9,13 +9,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+ 
   <header id="header" class="flex p-4 relative border-collapse items-center justify-center">
     <div id="header-content" class="container flex justify-between items-center justify-self-center">
         <span id="header-logo" class="flex">
-            <img class="flex mr-2 pb-2 h-16" src="./assets/logo-pequena.png" alt="WeBuyIt logo">
+            <img class="flex mr-2 pb-2 h-16 " src="./assets/logo-pequena.png"  alt="WeBuyIt logo">
             <img class="flex mr-8 h-14" src="./assets/logo-escrita.png" alt="WeBuyIt title">
         </span>
-        <div id="header-search-bar" class="flex bg-white align-center items-center mx-8">
+        <div id="header-search-bar" class="flex bg-white align-center  items-center mx-8">
             <input id="header-search-bar-input" class="flex m-4" type="text" placeholder="Pesquisar"></h6>
             <i class="las la-search flex m-4"></i>
         </div>
@@ -26,16 +27,42 @@
         </div>
     </div>
 </header>
+
+
+
+<div id="menu">
+  <nav id="menu-content" >
+    <ul class="container flex justify-between items-center  justify-self-center font-bold" id="container-menu">
+      <li>Categorias</li>
+      <li>Vestuário</li>
+      <li>Eletrônicos</li>
+      <li>Livros</li>
+      <li>Games</li>
+      <li>Casa</li>
+      <li>Ofertas do Dia</li>
+      <li>Vender</li>
+    </ul>
+
+  </nav>
+
+</div>
+
+
+
  
-  <h1 id="destaque" class="font-bold ">Destaques</h1>
-  <div class="container mx-auto">
-    <div id="container"
-    class="grid grid-cols-1 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  <h1 id="destaque" class="font-bold text-2xl sm:text-4xl">Destaques</h1>
+  <div class="container mx-auto ">
    
+    <!--    <div id="container"
+       class="grid grid-cols-8 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 "> -->
  
-    <div class="card border-2 p-2 flex flex-col " id="modelo">
+       <div id="container"
+       class="grid grid-cols-8 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 ">
+    
+    
+       <div class="card border-2 p-2 flex flex-col " id="modelo">
      
-      <img src="./assets/camiseta-um.png" alt="camiseta" class="h-80">
+      <img src="./assets/camiseta-um.png" alt="camiseta"  class="h-80 w-full object-cover">
       <h1 class="text-sm mt-4 font-bold">
         Camiseta | Original
       </h1>
@@ -50,7 +77,7 @@
     </div>
  
     <div class="card border-2 p-2 flex flex-col" id="modelo">
-      <img src="./assets/camiseta-dois.png" alt="" class="h-80">
+      <img src="./assets/camiseta-dois.png" alt=""  class="h-80  object-cover" >
       
       <h1 class="text-sm mt-4 font-bold">
         Camiseta | Original
@@ -61,7 +88,7 @@
     </div>
    
     <div class="card border-2 p-2 flex flex-col " id="modelo">
-      <img src="./assets/tv-produto.png" alt="" class="h-80">
+      <img src="./assets/tv-produto.png" alt="" class="h-80  object-cover">
     
       <h1 class="text-sm mt-4 font-bold">
        SmarTV 4K with AI
@@ -72,7 +99,7 @@
     </div>
  
     <div class="card border-2 p-2 flex flex-col " id="modelo">
-      <img src="./assets/gabinete-gamer.png" alt="" class="h-80">
+      <img src="./assets/gabinete-gamer.png" alt="" class="h-80  object-cover"> 
       
       <h1 class="text-sm mt-4 font-bold">
       PC Gamer | 16GB Ram, RTX - 4080, I9 13400.
