@@ -54,19 +54,32 @@
     width: 360px;
     padding: 2px 4px;
     margin-top: 12px;
+    border-radius: 4px;
 }
 
 #add-to-cart-button {
     border: 2px solid #B35FD0;
-    border-radius: 4px;
 }
 
 #buy-button {
-    border-radius: 4px;
     background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
 }
 
-.user-icon {
+.user-comment {
+    margin-top: 24px;
+}
+
+.user-comment-icon {
     height: 32px;
     border-radius: 50%;
+}
+
+.user-comment-name {
+    font-weight: 700;
+    margin-left: 8px;
+    opacity: .8;
+}
+
+.user-comment-message {
+    margin-left: 40px;
 }
