@@ -35,6 +35,12 @@
 }
 #form1{
     display: flex;
+<<<<<<< HEAD
+}
+#box-nome{
+    
+}
+=======
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -61,3 +67,8 @@ label{
     text-decoration: underline;
     margin-left: 69%;
 }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8e0665b6d2f45a5e57f1a1cac1cf3a884e9b562c
+>>>>>>> 6bde639ec846623ef23c292da86ee3854bfee5a6
