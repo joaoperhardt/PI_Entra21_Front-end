@@ -1,16 +1,74 @@
-#header {
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 92px;
+    height: 80px;
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
 }
-#cadastro-tittle{
-    align-items: center;
-    font-size: 40px;
-}
+
 #logo{
-    width: 40px;
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+}
+.box-border{
+    background-color: #c9c9c9;
+    height: 50px;
+}
+#nome, #cep, #data, #email, #telefone, #password, #button-continuar{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 4%;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+#button-continuar{
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
+    color: #fff !important;
+    height: 40px;
+    width: 321px;
+    border-radius: 5%;
+}
+#form1{
     display: flex;
+<<<<<<< HEAD
 }
 #box-nome{
     
 }
+=======
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0%;
+    
+}
+label{
+    display: block;
+    margin-bottom: auto;
+}
+#title-cadastro{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+#data{
+       height: 40px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 4%;
+    
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+#buscar-cep{
+    color: blue;
+    font-size: xx-small;
+    text-decoration: underline;
+    margin-left: 69%;
+}
+    
+>>>>>>> 8e0665b6d2f45a5e57f1a1cac1cf3a884e9b562c
