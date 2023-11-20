@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body >
  
-  <header id="header" class="flex p-4 relative border-collapse items-center justify-center">
-    <div id="header-content" class="container flex justify-between items-center justify-self-center">
+  <header id="header" class="flex p-4 relative border-collapse items-center justify-center ">
+    <div id="header-content" class="container flex justify-between items-center justify-self-center ">
         <span id="header-logo" class="flex">
             <img class="flex mr-2 pb-2 h-16 " src="./assets/logo-pequena.png"  alt="WeBuyIt logo">
             <img class="flex mr-8 h-14" src="./assets/logo-escrita.png" alt="WeBuyIt title">
@@ -25,16 +25,22 @@
             <i class="lar la-bell la-3x mx-4"></i>
             <i id="header-icons-user" class="las la-user-circle la-3x mx-4"></i>
         </div>
-    </div>
+    
+        
+    
+    
+      </div>
+
+   
 </header>
 
 
+<div class="bg">
 
 
-
-<div id="menu">
+<div id="menu" >
   <nav id="menu-content" >
-    <ul class="container flex justify-between items-center  justify-self-center font-bold" id="container-menu">
+    <ul class="container flex justify-between items-self-center text-center  justify-center font-bold " id="container-menu">
       <li>Categorias</li>
       <li>Vestuário</li>
       <li>Eletrônicos</li>
@@ -47,26 +53,28 @@
 
   </nav>
 
-</div>
+</div> 
 
-
-<img src="./assets/banner.png" alt="banner" class="h-150 w-150 mL-8">
-
+<div class=" container 	" >  
+<img src="./assets/banner.png" alt="banner"  class=" w-full 	" >
+ </div>
 
 
  
   
-  <div class="container mx-auto ">
-    <h1 id="destaque" class="font-bold text-2xl sm:text-4xl">DESTAQUES</h1>
+  <div class="container mx-auto  ">
+    <h1 id="destaque" class="font-bold text-2xl sm:text-4xl mb-4 ">DESTAQUES</h1>
    
     <!--    <div id="container"
        class="grid grid-cols-8 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 "> -->
  
        <div id="container"
-       class="grid grid-cols-8 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2  ">
+       class="grid grid-cols-2 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2  ">
     
     
-       <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo">
+       <!-- <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo"> -->
+
+        <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo">
      
       <img src="./assets/camiseta-um.png" alt="camiseta"  class="h-80 w-full object-cover">
       <h1 class="text-sm mt-4 font-bold">
@@ -80,11 +88,11 @@
         </container>
       </div>
       <ul class="flex ">
-        <li class=" icone"> <i class="las la-user la-3x " ></i></li>
-        <li  class="icone"> <i class="las la-user la-3x "></i></li>
-        <li  class="icone"><i class="las la-user la-3x "></i></li>
-        <li  class=""><i class="las la-user la-3x "></i></li>
-        <li  class=""><i class="las la-user la-3x "></i></li>
+        <li class=" icone"> <i class="las la-user la-3x sm:la-1x md:la-2x" ></i></li>
+        <li  class="icone"> <i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class="icone"><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
 
       </ul>
     </div>
@@ -98,11 +106,11 @@
       <div class="text-1xl my-1 font-bold text-purple-600 ps-px">R$ 100,00 <span class="preco"></span></div>
       <div class="text-4xl my-1 font-bold text-black">R$ 50,00 <span class="preco-novo"></span></div>
       <ul class="flex ">
-        <li class=" icone"> <i class="las la-user la-3x " ></i></li>
-        <li  class="icone"> <i class="las la-user la-3x "></i></li>
-        <li  class=""><i class="las la-user la-3x "></i></li>
-        <li  class=""><i class="las la-user la-3x "></i></li>
-        <li  class=""><i class="las la-user la-3x "></i></li>
+        <li class=" icone"> <i class="las la-user la-3x sm:la-1x md:la-2x" ></i></li>
+        <li  class="icone"> <i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
 
       </ul>
     </div>
@@ -146,6 +154,99 @@
     </div>
  
   </div>
+
+  <div class="container mx-auto ">
+    <h1 id="destaque" class="font-bold text-2xl sm:text-4xl mb-4 mt-4 ">DESTAQUES</h1>
+   
+    <!--    <div id="container"
+       class="grid grid-cols-8 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 "> -->
  
+       <div id="container"
+       class="grid grid-cols-2 mx-4 sm:mx-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2  ">
+    
+    
+       <!-- <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo"> -->
+
+        <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo">
+     
+      <img src="./assets/camiseta-um.png" alt="camiseta"  class="h-80 w-full object-cover">
+      <h1 class="text-sm mt-4 font-bold">
+        Camiseta | Original
+      </h1>
+      <div class="text-1xl my-1 font-bold text-purple-600 ps-px">R$ 150,00 <span class="preco"></span></div>
+      <div class="text-4xl my-1 font-bold text-black">R$ 100,00 <span class="preco-novo"></span></div>
+      <div id="icone-desconto">
+        <container class="container ">
+
+        </container>
+      </div>
+      <ul class="flex ">
+        <li class=" icone"> <i class="las la-user la-3x sm:la-1x md:la-2x" ></i></li>
+        <li  class="icone"> <i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class="icone"><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
+
+      </ul>
+    </div>
+ 
+    <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo">
+      <img src="./assets/camiseta-dois.png" alt=""  class="h-80  object-cover" >
+      
+      <h1 class="text-sm mt-4 font-bold">
+        Camiseta | Original
+      </h1>
+      <div class="text-1xl my-1 font-bold text-purple-600 ps-px">R$ 100,00 <span class="preco"></span></div>
+      <div class="text-4xl my-1 font-bold text-black">R$ 50,00 <span class="preco-novo"></span></div>
+      <ul class="flex ">
+        <li class=" icone"> <i class="las la-user la-3x sm:la-1x md:la-2x" ></i></li>
+        <li  class="icone"> <i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x "></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
+        <li  class=""><i class="las la-user la-3x sm:la-1x md:la-2x"></i></li>
+
+      </ul>
+    </div>
+   
+    <div class="card border-2 p-2 flex flex-col rounded-2xl " id="modelo">
+      <img src="./assets/tv-produto.png" alt="" class="h-80  object-cover">
+    
+      <h1 class="text-sm mt-4 font-bold">
+       SmarTV 4K with AI
+      </h1>
+      <div class="text-1xl my-1 font-bold text-purple-600 ps-px">R$ 5.150,00 <span class="preco"></span></div>
+      <div class="text-4xl my-1 font-bold text-black">R$ 3.100,00 <span class="preco-novo"></span></div>
+      <ul class="flex ">
+        <li class=" icone"> <i class="las la-user la-3x " ></i></li>
+        <li  class=""> <i class="las la-user la-3x "></i></li>
+        <li  class=""><i class="las la-user la-3x "></i></li>
+        <li  class=""><i class="las la-user la-3x "></i></li>
+        <li  class=""><i class="las la-user la-3x "></i></li>
+
+      </ul>
+    </div>
+ 
+    <div class="card border-2 p-2 flex flex-col rounded-2xl  " id="modelo">
+      <img src="./assets/gabinete-gamer.png" alt="" class="h-80  object-cover"> 
+      
+      <h1 class="text-sm mt-4 font-bold">
+      PC Gamer | 16GB Ram, RTX - 4080, I9 13400.
+      </h1>
+      <div class="text-1xl my-1 font-bold text-purple-600 ps-px">R$ 11.150,00 <span class="preco"></span></div>
+      <div class="text-4xl my-1 font-bold text-black">R$ 8.180,00 <span class="preco-novo"></span></div>
+      <ul class="flex ">
+        <li class=" icone"> <i class="las la-user la-3x " ></i></li>
+        <li  class="icone"> <i class="las la-user la-3x "></i></li>
+        <li  class="icone"><i class="las la-user la-3x "></i></li>
+        <li  class="icone"><i class="las la-user la-3x "></i></li>
+        <li  class="icone"><i class="las la-user la-3x "></i></li>
+
+      </ul>
+    </div>
+   
+    </div>
+ 
+  </div>
+ </div>
 </body>
 </html>
