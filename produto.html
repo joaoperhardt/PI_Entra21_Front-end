@@ -34,9 +34,11 @@
 
     <div class="main-div h-[100vh] lg:mx-[180px]">
         <div id="product-div" class="p-4">
-            <div class="lg:flex lg:flex-grid">
-                <img id="product-image" class="lg:w-4/12" src="./assets/images/Imagem do produto.png"
+            <div class="lg:flex lg:flex-row">
+                <div class="lg:justify-center lg:items-center lg:flex">
+                    <img id="product-image" class="lg:w-9/12 lg:flex" src="./assets/images/Imagem do produto.png"
                     alt="Product image">
+                </div>
                 <div id="product-info" class="lg:ml-6">
                     <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
                     <p class="text-2xl text-purple mt-4">R$ 500,00</p>
@@ -51,7 +53,7 @@
                         <p class="">Voluntários</p>
                     </div>
                 </div>
-                <div id="product-buy-field" class="mt-4 lg:border-2 lg:border-solid lg:p-4 lg:ml-6">
+                <div id="product-buy-field" class="mt-4 lg:border-2 lg:border-solid lg:p-4 lg:ml-32 lg:items-center ">
                     <div class="flex flex-row items-center">
                         <span id="product-quantity-span" class="flex flex-row items-center">
                             <label class="text-xl lg:text-md" for="product-quantity">Quantidade:</label>
@@ -68,7 +70,7 @@
                             </p>
                         </span>
                     </div>
-                    <div>
+                    <div class="lg:flex lg:flex-col">
                         <button id="add-to-cart-button" class="h-[48px] w-[360px] py-2 mt-4 lg:w-[292px]" type="submit">
                             <p class="text-2xl">Adicionar ao carrinho</p>
                         </button>
