@@ -50,8 +50,6 @@
 }
 
 #product-buy-field button {
-    height: 48px;
-    width: 360px;
     padding: 2px 4px;
     margin-top: 12px;
     border-radius: 4px;
@@ -82,4 +80,8 @@
 
 .user-comment-message {
     margin-left: 40px;
+}
+
+#similiar-products {
+    
 }
