@@ -69,3 +69,29 @@ body {
   .login-text {
     margin-left: 5px;
   }
+
+  .login-form button {
+    background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .signup-link {
+    color: #000000;
+    margin-top: 16px;
+    font-size: 20px;
+  }
+  
+  .password-box {
+    background-color: #cccccc67;
+  }
+  
+  .email-box {
+    background-color: #cccccc67;
+  }
