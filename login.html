@@ -13,29 +13,33 @@
 
 <body>
     <header id="header" class="w-screen xs:p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center relative flex">
-        <img class="border-collapse items-center justify-center h-36" src="C:\Users\maria.silva180\OneDrive - SENAC-SC\PROGRAMAÇÃO WEB\LOGIN WEBUYIT\assets\images\MicrosoftTeams-image.png" alt="Logo">
+        <img class="border-collapse items-center justify-center h-36"
+            src="C:\Users\maria.silva180\OneDrive - SENAC-SC\PROGRAMAÇÃO WEB\LOGIN WEBUYIT\assets\images\MicrosoftTeams-image.png"
+            alt="Logo">
     </header>
 
-    <div>
-        <div>
+    <div class="flex flex-col items-center justify-self-center w-full mr-8">
+        <div class="login-container text-left mt-12 p-8">
             <div class="login-image items-center flex justify-center mr-8 mb-10">
                 <i class="lar la-user-circle la-3x"></i>
                 <h2 class="login-text text-5xl">Login</h2>
             </div>
+
+            <form class="login-form flex flex-col">
+                <label class="email-write" for="username">E-mail</label>
+                <input class="email-box box-border text-black" type="text" id="username" name="username" required>
+    
+                <label class="password-write" for="password">Senha</label>
+                <input class="password-box text-black" type="password" id="password" name="password" required>
+    
+                <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
+                        href="#">Esqueci
+                        minha senha</a></div>
+                <button type="submit">Login</button>
+                <p class="signup-link text-center text-black">Não tem cadastro? <a
+                        class="underline underline-offset-2 text-purple-900" href="#">Cadastre-se!</a></p>
+            </form>
         </div>
-
-        <form class="login-form flex flex-col">
-            <label class="email-write" for="username">E-mail</label>
-            <input class="email-box box-border text-black" type="text" id="username" name="username" required>
-
-            <label class="password-write" for="password">Senha</label>
-            <input class="password-box text-black" type="password" id="password" name="password" required>
-
-            <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
-                    href="#">Esqueci
-                    minha senha</a></div>
-            <button type="submit">Login</button>
-        </form>
     </div>
 
 </body>
