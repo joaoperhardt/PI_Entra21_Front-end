@@ -13,33 +13,33 @@
     </header>
    
     <div id="formulário">
-        <div id="title-cadastro" class="font-bold"><h1>Cadastro de Usuário</h1></div>
-        <form id="form1" action="">
-            <div>
+        <div id="title-cadastro"><h1>Cadastro de Usuário</h1></div>
+        <form id="form1" action="" >
+            <div >
                 <div>
-                    <label for="nome" class="font-bold w-80">Nome Completo</label>
-                    <input type="text" id="nome" required>
+                    <label for="nome" class="w-80">Nome Completo</label>
+                    <input type="text"  id="nome" required>
                 </div>
                 <div>
-                    <label for="data" class="font-bold">Data de nascimento</label>
-                    <input type="date" id="data">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" id="data" required>
                 </div>
                 <div>
                 <div>                
-                    <label for="cep" class="font-bold">CEP<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
-                    <input type="text" id="cep" placeholder="XXXXX-XXX" >                
+                    <label for="cep" >CEP<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
+                    <input type="text" id="cep" placeholder="XXXXX-XXX" required>                
                 </div>
                 <div>
-                    <label for="telefone" class="font-bold">Telefone</label>
-                    <input type="text" id="telefone" placeholder="+55 (XX) XXXXX-XXXX">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="+55 (XX) XXXXX-XXXX" required>
                 </div>
                 <div>
-                    <label for="email" class="font-bold">E-mail</label>
-                    <input type="text" id="email">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" required>
                 </div>
                 <div>
-                    <label  for="password" class="font-bold">Senha</label>
-                    <input type="password" id="password">
+                    <label  for="password">Senha</label>
+                    <input type="password" id="password" required>
                 </div>
                 
                     <button class="font-bold" id="button-continuar" submit="">Continuar</button>
