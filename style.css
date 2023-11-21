@@ -17,3 +17,46 @@ body {
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
     align-content: center;
 }
+
+.login-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    width: 400px;
+    color: #8e44ad;
+  }
+  
+  
+  .login-container h2 {
+    font-size: px;
+    color: #8e44ad;
+  }
+  
+  .login-container p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  
+  .login-form label {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .login-form input:focus {
+    border-color: #8e44ad;
+    outline: none;
+  }
