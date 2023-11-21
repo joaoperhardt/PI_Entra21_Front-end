@@ -6,6 +6,16 @@
     align-content: center;
 }
 
+@font-face{
+    font-family: HammersmithOne;
+    src: url(./assets/HammersmithOne-Regular\ -\ Atalho.lnk);
+}
+
+*{
+    font-family: HammersmithOne;
+}
+
+
 #header-content {
     justify-self: center;
 }
@@ -70,7 +80,8 @@ nav ul li{
 nav ul li:hover #sub-menu{
     display: block;
     position: absolute;
-    background-color: aqua;
+  /*   background-color: rgb(243, 150, 234);*/
+    background-color: rgba(228, 207, 207, 0.849);
     margin-top: 15px;
     margin-left: -38px;
 }
