@@ -4,7 +4,7 @@
 }
 *{
     font-family: Hammersmith One;
-    font-size: ;
+    font-size: 15px;
 }
 #header {
     display: flex;
@@ -20,7 +20,7 @@
     height: 140px;
     margin-top: 10px;
 }
-#nome, #cep, #data, #email, #telefone, #password, #button-continuar{
+#nome, #cep, #data, #email, #telefone, #password, #button-continuar {
     background-color: #cccccc67;
     border-radius: 4%;
     width: 100%;
@@ -34,10 +34,11 @@
     height: 40px;
     width: 321px;
     border-radius: 4%;
-    margin-top: 110px;
+    margin-top: 85px;
     height: 102px;
 }
 #form1{
+    border-color: #581c87;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -52,7 +53,7 @@ label{
 }
 #buscar-cep{
     color: #581c87;
-    font-size: xx-small;
+    font-size: 68%;
     text-decoration: underline;
-    margin-left: 69%;
+    margin-left: 65%; color: #581c87;
 }
