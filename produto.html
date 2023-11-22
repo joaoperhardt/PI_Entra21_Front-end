@@ -32,28 +32,85 @@
         </div>
     </header>
 
-    <div class="main-div h-[100vh] lg:mx-[180px]">
+    <div class="main-div h-[100vh] lg:mx-[240px]">
         <div id="product-div" class="p-4">
-            <div class="lg:flex lg:flex-row">
-                <div class="lg:justify-center lg:items-center lg:flex">
+
+            <div id="" class="hidden lg:flex lg:flex-row justify-between">
+                <div id="column-left" class="flex flex-col justify-center">
+                    <img id="product-image" class="w-3/3" src="./assets/images/Imagem do produto.png"
+                    alt="Product image">
+                    <img class="flex w-96" src="./assets/images/image 2.png" alt="volunteers">
+                </div>
+
+                <div id="column-center">
+                    <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
+                    <p class="text-2xl text-purple mt-4">R$ 500,00</p>
+                    <span id="product-price" class="flex items-center">
+                        <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
+                        <span class="ml-4 items-center">
+                            <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
+                        </span>
+                    </span>
+                    <div class="grid grid-cols-3 gap-4 mt-6 justify-between">
+                        <p class="product-tag">Música</p>
+                        <p class="product-tag">Vinil</p>
+                        <p class="product-tag">Álbum</p>
+                    </div>
+                </div>
+
+                <div id="column-right">
+                    <div id="product-buy-field" class="mt-4 border-2 border-solid p-4 items-center rounded-xl">
+                        <div class="flex flex-row items-center justify-between">
+                            <span id="product-quantity-span" class="flex flex-row items-center">
+                                <label class="text-xl" for="product-quantity">Quantidade:</label>
+                                <span id="product-quantity-setter" class="">
+                                    <select class="text-xl font-bold ml-2 w-[62px] h-[40px]" name="product-quantity">
+                                        <option class="" value="1">1</option>
+                                        <option class="" value="2">2</option>
+                                    </select>
+                                </span>
+                            </span>
+                            <span class="flex flex-row ml-12 lg:ml-8">
+                                <p class="text-xl">Frete:
+                                <p class="text-xl font-bold">R$ 15,00</p>
+                                </p>
+                            </span>
+                        </div>
+                        <div class="flex flex-col">
+                            <button id="add-to-cart-button" class=" w-[360px] py-2 mt-4 w-[292px]" type="submit">
+                                <p class="text-2xl">Adicionar ao carrinho</p>
+                            </button>
+                            <button id="buy-button" class="h-[48px] w-[360px] py-2 mt-4 w-[292px]" type="submit">
+                                <p class="text-2xl text-white">Comprar</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+            <div class="lg:hidden">
+                <div class="lg:items-center lg:flex lg:justify-center">
                     <img id="product-image" class="lg:w-9/12 lg:flex" src="./assets/images/Imagem do produto.png"
                     alt="Product image">
                 </div>
-                <div id="product-info" class="lg:ml-6">
+                <div id="product-info" class="">
                     <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
                     <p class="text-2xl text-purple mt-4">R$ 500,00</p>
-                    <span id="product-price" class="flex items-center mt-2">
-                        <p class=" text-5xl font-bold">R$ 450,00</p>
+                    <span id="product-price" class="flex items-center">
+                        <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
                         <span class="ml-4 items-center">
                             <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
                         </span>
                     </span>
                     <div class="mt-4 justify-center">
-                        <img class="h-12" src="./assets/images/image 2.png" alt="volunteers">
-                        <p class="">Voluntários</p>
+                        <img class="h-12 lg:hidden" src="./assets/images/image 2.png" alt="volunteers">
+                        <p class="lg:hidden">Voluntários</p>
                     </div>
                 </div>
-                <div id="product-buy-field" class="mt-4 lg:border-2 lg:border-solid lg:p-4 lg:ml-32 lg:items-center ">
+                <div id="product-buy-field" class="mt-4 lg:border-2 lg:border-solid lg:p-4 lg:items-center lg:rounded-xl">
                     <div class="flex flex-row items-center">
                         <span id="product-quantity-span" class="flex flex-row items-center">
                             <label class="text-xl lg:text-md" for="product-quantity">Quantidade:</label>
@@ -80,10 +137,37 @@
                     </div>
                 </div>
             </div>
-            
-            <div id="product-volunteers"></div>
 
-            <div id="product-localizer">
+
+            <!-- Div exclusiva do desktop para a organização dos voluntários e locais referentes a compra -->
+            <div class="hidden">
+                <div id="product-volunteers">
+                    <img class="hidden lg:flex lg:w-96" src="./assets/images/image 2.png" alt="volunteers">
+                </div>
+                <div id="product-localizer" class="hidden lg:block">
+                    <div class="mt-2">
+                        <p>Entregar em:</p>
+                        <div class="flex flex-row">
+                            <i class="las la-map-marker p-1"></i>
+                            <p>SC, Gaspar, Santa Teresinha, R. Barão do Rio Branco, 13 </p>
+                        </div>
+                    </div>
+                    <div id="product-store" class="mt-4">
+                        <p>Loja anunciante:</p>
+                        <div class="flex flex-row">
+                            <i class="las la-store-alt p-1"></i>
+                            <span class="text-sm">
+                                <p>Bnu Vinis</p>
+                                <p>Santa Catarina, Blumenau, Fortaleza, R. Eclair Martin da Silva, 256</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div id="product-localizer" class="lg:hidden">
                 <div class="mt-2">
                     <p>Entregar em:</p>
                     <div class="flex flex-row">
