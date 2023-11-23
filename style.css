@@ -6,6 +6,7 @@
     align-content: center;
 }
 
+
 #header-content {
     justify-self: center;
 }
@@ -74,5 +75,10 @@ nav ul li:hover #sub-menu{
     margin-top: 15px;
     margin-left: -38px;
 }
+
+/*#modeloum{
+    background-image: url(./assets/camiseta-um.png);
+    
+}*/
 
 
