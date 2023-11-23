@@ -29,3 +29,30 @@
     align-items: center;
     flex-direction: column;
 }
+label{
+    display: block;
+}
+#button-continuar{
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
+    color: #fff;
+    height: 40px;
+    width: 321px;
+    border-radius: 4%;
+    margin-top: 110px;
+    margin-top: 85px;
+    height: 102px;
+}
+#nome-loja, #descricao-loja, #cep, #estado, #cidade, #bairro, #rua, #numero, #complemento, #contato-loja, #cpf-loja, #cnpj-loja, #senha-confirmar-loja,  #button-continuar{
+    background-color: #cccccc67;
+    border-radius: 4%;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;    
+    font-size: 20px;
+}
+#buscar-cep{
+    color: #581c87;
+    font-size: 68%;
+    text-decoration: underline;
+    margin-left: 37%;
+}
