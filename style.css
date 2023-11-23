@@ -28,29 +28,11 @@
     outline: none;
 }
 
-
-
-
-/*#modelo{
-background-color: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
-
-}*/
-
 .imagem-produto{
     width: 10%;
     height: 150px;
     margin-right: 100px;
 }
-
-/*#menu-content {
-    background-color: rgba(65, 72, 129, 1);
-    opacity: 2;
-}*/
-
-/*#container-menu{
-    color: #fef1eb;
-}*/
-
 
 .icone {
     color: blueviolet;
@@ -76,9 +58,6 @@ nav ul li:hover #sub-menu{
     margin-left: -38px;
 }
 
-/*#modeloum{
-    background-image: url(./assets/camiseta-um.png);
-    
-}*/
+
 
 
