@@ -7,10 +7,65 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://tailwindcss.com/"></script>
 </head>
-<header id="header">
-        <div class="content flex item-center justify-center"><img id="logo" src="./assets/Logo-We-Buy-It.png" alt="Logo-We-Buy-It"></div>
-</header>
 <body>
-    <div id="titulo-cadastro"><h1>Cadastro de Loja</h1></div>
+    <header id="header">
+        <div class="content flex item-center justify-center"><img id="logo" src="./assets/Logo-We-Buy-It.png" alt="Logo-We-Buy-It"></div>
+    </header>
+    <div id="titulo-cadastro-loja"><h1>Cadastro de Loja</h1></div>
+    <form id="form-cadastro-loja" action="">
+        <div id="add-imagens">
+            <div id="add-banner">
+               <input type="image" style="border: double;" height="90" width="100%"/>
+            </div>
+            <div id="add-foto">
+                <input type="image" style="border: 20px" height="40" width="40" id="">
+            </div>
+        </div>
+        <div id="text-areas">
+            <div>
+            <label for="nome-loja" class="w-80">Nome da Loja</label>
+            <input type="text" id="nome-loja" required>
+            </div>
+            <div>
+                <label for="descricao-loja">Descrição da loja</label>
+            </div>
+            <div>
+                <textarea name="descricao" id="descricao-loja" cols="10" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="cep" >CEP da loja<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
+                <input type="text" id="cep" placeholder="XXXXX-XXX" required>    
+            </div>
+            <div id="localizacao">
+                <label for="localizacao-loja">Localização da loja</label>
+                <select name="estado" id="estado">
+                    <option value="1"></option>
+                    <option value="2">RJ</option>
+                    <option value="3">SP</option>
+                    <option value="4">SC</option>
+                </select><select name="cidade" id="cidade">
+                    <option value="1"></option>
+                    <option value="2">Blumenau</option>
+                    <option value="3">Itajaí</option>
+                    <option value="4">Floripa</option>
+                </select>
+                <div>
+                    <input type="text" id="bairro" placeholder="Bairro">
+                </div>
+                <div>
+                <input type="text" id="rua" placeholder="Rua">
+                </div>
+                <div>
+                <input type="text" id="numero" placeholder="Número">
+                </div>
+                <input type="text" id="complemento" placeholder="Complemento">
+            </div>
+            <div>
+                <label for="contato-loja">Contato da loja</label>
+                <input type="text" id="contato-loja" placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <div></div>
+        </div>
+    </form>
 </body>
 </html>

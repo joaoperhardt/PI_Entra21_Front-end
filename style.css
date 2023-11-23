@@ -19,6 +19,13 @@
     height: 140px;
     margin-top: 10px;
 }
-#titulo-cadastro{
-   justify-content: center;
+#titulo-cadastro-loja{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+#form-cadastro-loja{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
