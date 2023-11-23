@@ -16,7 +16,7 @@
         <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
             <span id="header-logo" class="flex">
                 <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/Sem Título-4.png" alt="WeBuyIt logo">
-                <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/MicrosoftTeams-image.png"
+                <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/header logo.png"
                     alt="WeBuyIt title">
             </span>
             <div id="header-search-bar" class="bg-white align-center items-center mx-8 hidden sm:flex lg:flex">
@@ -39,18 +39,22 @@
                 <div id="column-left" class="flex flex-col justify-center">
                     <img id="product-image" class="w-3/3" src="./assets/images/Imagem do produto.png"
                     alt="Product image">
-                    <img class="flex w-96" src="./assets/images/image 2.png" alt="volunteers">
+                    <img class="flex mt-6 w-96" src="./assets/images/image 2.png" alt="volunteers">
                 </div>
 
                 <div id="column-center">
                     <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
-                    <p class="text-2xl text-purple mt-4">R$ 500,00</p>
+                    <p class="text-2xl opacity-50 mt-4 line-through">R$ 500,00</p>
                     <span id="product-price" class="flex items-center">
-                        <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
+                        <p class=" text-6xl font-bold">R$ 450,00</p>
                         <span class="ml-4 items-center">
                             <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
                         </span>
                     </span>
+                    <div class="flex flex-row mt-4 text-xl">
+                        <p class="text-md">de&nbsp;</p>
+                        <p class="text-[#B35FD0]">10x R$ 45,00 sem juros</p>
+                    </div>
                     <div class="grid grid-cols-3 gap-4 mt-6 justify-between">
                         <p class="product-tag">Música</p>
                         <p class="product-tag">Vinil</p>
@@ -59,7 +63,7 @@
                 </div>
 
                 <div id="column-right">
-                    <div id="product-buy-field" class="mt-4 border-2 border-solid p-4 items-center rounded-xl">
+                    <div id="product-buy-field" class="mt-4 border-2 border-solid p-4 items-center rounded-xl justify-center">
                         <div class="flex flex-row items-center justify-between">
                             <span id="product-quantity-span" class="flex flex-row items-center">
                                 <label class="text-xl" for="product-quantity">Quantidade:</label>
@@ -70,19 +74,39 @@
                                     </select>
                                 </span>
                             </span>
-                            <span class="flex flex-row ml-12 lg:ml-8">
-                                <p class="text-xl">Frete:
+                            <span class="flex flex-row ">
+                                <p class="text-xl">Frete:&nbsp;
                                 <p class="text-xl font-bold">R$ 15,00</p>
                                 </p>
                             </span>
                         </div>
                         <div class="flex flex-col">
-                            <button id="add-to-cart-button" class=" w-[360px] py-2 mt-4 w-[292px]" type="submit">
+                            <button id="add-to-cart-button" class="h-[48px] w-[360px] py-2 mt-4" type="submit">
                                 <p class="text-2xl">Adicionar ao carrinho</p>
                             </button>
-                            <button id="buy-button" class="h-[48px] w-[360px] py-2 mt-4 w-[292px]" type="submit">
+                            <button id="buy-button" class="h-[48px] w-[360px] py-2 mt-4" type="submit">
                                 <p class="text-2xl text-white">Comprar</p>
                             </button>
+                        </div>
+                    </div>
+
+                    <div id="product-localizer" class="">
+                        <div class="mt-6">
+                            <p>Entregar em:</p>
+                            <div class="flex flex-row">
+                                <i class="las la-map-marker p-1"></i>
+                                <p>SC, Gaspar, Santa Teresinha, R. Barão do Rio Branco, 13 </p>
+                            </div>
+                        </div>
+                        <div id="product-store" class="mt-4">
+                            <p>Loja anunciante:</p>
+                            <div class="flex flex-row">
+                                <i class="las la-store-alt p-1"></i>
+                                <span class="">
+                                    <p>Bnu Vinis</p>
+                                    <p>SC, Blumenau, Fortaleza, R. Eclair Martin da Silva, 256</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +122,7 @@
                 </div>
                 <div id="product-info" class="">
                     <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
-                    <p class="text-2xl text-purple mt-4">R$ 500,00</p>
+                    <p class="text-2xl mt-4">R$ 500,00</p>
                     <span id="product-price" class="flex items-center">
                         <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
                         <span class="ml-4 items-center">
@@ -122,7 +146,7 @@
                             </span>
                         </span>
                         <span class="flex flex-row ml-12 lg:ml-8">
-                            <p class="text-xl lg:text-md">Frete:
+                            <p class="text-xl lg:text-md">Frete:&nbsp;
                             <p class="text-xl lg:text-md font-bold">R$ 15,00</p>
                             </p>
                         </span>
