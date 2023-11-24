@@ -1,0 +1,63 @@
+
+#header {   
+    height: 92px;
+   
+    background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
+    align-content: center;
+}
+
+
+#header-content {
+    justify-self: center;
+}
+
+#header-search-bar {
+    width: 552px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+#header-search-bar-input {
+    font-size: 12px;
+    font-weight: 400px;
+    opacity: .5;
+    flex-grow: 1;
+}
+
+#header-search-bar-input:focus {
+    outline: none;
+}
+
+.imagem-produto{
+    width: 10%;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.icone {
+    color: blueviolet;
+}
+
+#img-content{
+    text-align: center;
+}
+
+
+
+nav ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li:hover #sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(81, 88, 112);
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+
+
+
