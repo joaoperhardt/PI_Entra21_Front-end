@@ -55,11 +55,11 @@ body {
     text-align: center;
 }
 
-#product-buy-field {
+.product-buy-field {
     justify-content: center;
 }
 
-#product-buy-field button {
+.product-buy-field button {
     padding: 2px 4px;
     margin-top: 12px;
     border-radius: 4px;
