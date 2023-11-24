@@ -3,8 +3,8 @@
     src: url(./assets/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
 *{
-    font-family: Hammersmith One;
-    font-size: 15px;
+    font-family: Hammersmith One !important;
+    font-size: 15px ;
 }
 #header {
     display: flex;
@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-color: #581c87;
 }
 label{
     display: block;
@@ -41,7 +42,6 @@ label{
     height: 40px;
     width: 321px;
     border-radius: 4%;
-    margin-top: 110px;
     margin-top: 85px;
     height: 102px;
 }
@@ -50,12 +50,18 @@ label{
     border-radius: 4%;
     width: 100%;
     padding: 8px;
-    margin-bottom: 16px;    
-    font-size: 28px;
+    margin-bottom: 16px ;    
+    font-size: 20px;
 }
 #buscar-cep{
     color: #581c87;
     font-size: 68%;
     text-decoration: underline;
     margin-left: 37%;
+}
+input{
+    border-color: transparent;
+}
+#descricao-loja{
+    width: 100%;
 }
