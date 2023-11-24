@@ -55,11 +55,11 @@ body {
     text-align: center;
 }
 
-.product-buy-field {
+#product-buy-field {
     justify-content: center;
 }
 
-.product-buy-field button {
+#product-buy-field button {
     padding: 2px 4px;
     margin-top: 12px;
     border-radius: 4px;
@@ -95,11 +95,10 @@ body {
 .user-comment-name {
     font-weight: 700;
     margin-left: 8px;
-    opacity: .8;
 }
 
 .user-comment-message {
-    margin-left: 40px;
+    margin-left: 8px;
 }
 
 #similiar-products {
