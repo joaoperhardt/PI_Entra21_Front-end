@@ -15,12 +15,35 @@
 }
 
 #header-search-bar-input {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400px;
-    opacity: .5;
     flex-grow: 1;
 }
 
-#header-search-bar-input:focus {
-    outline: none;
+nav ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li:hover #sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(81, 88, 112);
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+.imagem-produto{
+    width: 10%;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.icone {
+    color: blueviolet;
+}
+
+#img-content{
+    text-align: center;
 }
