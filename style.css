@@ -54,7 +54,10 @@ nav ul li:hover #sub-menu{
 }
 
 .product-price {
-
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    align-items: center;
 }
 
 .icone {
