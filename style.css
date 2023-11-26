@@ -48,9 +48,13 @@ nav ul li:hover #sub-menu{
 }
 
 .imagem-produto{
-   max-width: 340px;
-   max-height: 340px;
+   max-width: 264px;
+   max-height: 264px;
    justify-self: center;
+}
+
+.product-price {
+
 }
 
 .icone {

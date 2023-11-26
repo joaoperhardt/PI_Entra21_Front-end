@@ -21,7 +21,7 @@
             </span>
             <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
                 <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
-                    type="text" placeholder="Pesquisar" value="camiseta preta">
+                    type="text" placeholder="Pesquisar" value="camiseta basica">
                 <i class="las la-search flex m-4"></i>
             </div>
             <div id="header-icons" class="flex items-center">
@@ -119,15 +119,18 @@
 
     <div class="main-div h-[100vh] lg:mx-[240px] mt-4">
 
-        <h1 class="px-2 my-4 text-2xl lg:hidden">Resultados para "camisa preta":</h1>
+        <div class="flex items-center p-1">
+            <i class="las la-filter la-2x p-1"></i>
+            <h1 class="px-2 my-4 text-2xl float-right lg:hidden">Resultados para "camiseta basica":</h1>
+        </div>
 
         <aside class="hidden pr-6">
-            <h1 class="">Camiseta preta</h1>
+            <h1 class="">Camiseta básica</h1>
         </aside>
 
         <div id="cards-div" class="flex grid grid-cols-2 p-2 gap-2 lg:grid-cols-3">
             <div class="card" id="modelo">
-                <img src="./assets/images/camisa-preta.webp" alt="camisa-preta-masc" class="imagem-produto">
+                <img src="./assets/images/camisa-preta-masc.webp" alt="camisa-preta-masc" class="imagem-produto">
 
                 <h1 class="text-md mt-2 font-bold">
                     Camiseta preta básica masculina
@@ -165,22 +168,25 @@
             </div>
 
             <div class="card" id="modelo">
-                <img src="./assets/tv-produto.png" alt="" class="h-40  ">
+                <img src="./assets/images/camisa-branca-masc.png" alt="camisa-preta-masc" class="imagem-produto">
 
-                <h1 class="text-sm mt-4 font-bold">
-                    SmarTV 4K with AI
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta branca masculina 100% algodão
                 </h1>
 
-
                 <div class="md:flex flex-col md:justify-between">
-                    <div class="text-2xl md:text-2xl my-1 font-bold text-purple-600 ps-px line-through">R$ 5.150,00
-                        <span class="preco"></span></div>
-                    <div class="text-3xl md:text-3xl my-1 font-bold text-black">R$ 3.100,00 <span
-                            class="preco-novo"></span>
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 45
                     </div>
+                    <div class="flex flex-row mt-1 items-center">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 30 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+                    
+                    <div class="text-md my-1">em 5x R$ 6</div>
                 </div>
 
-                <ul class="flex justify-center">
+                <ul class="flex">
                     <li class="icone mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
@@ -190,32 +196,35 @@
                     <li class="icone mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
-                    <li class="icone mx-2 my-2">
+                    <li class=" mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
-                    <li class="icone mx-2 my-2">
+                    <li class=" mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
                 </ul>
             </div>
 
             <div class="card" id="modelo">
-                <img src="./assets/tv-produto.png" alt="" class="h-40  ">
+                <img src="./assets/images/camisa-preta-unissex.png  " alt="camisa-preta-masc" class="imagem-produto">
 
-                <h1 class="text-sm mt-4 font-bold">
-                    SmarTV 4K with AI
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta unissex
                 </h1>
 
-
                 <div class="md:flex flex-col md:justify-between">
-                    <div class="text-2xl md:text-2xl my-1 font-bold text-purple-600 ps-px line-through">R$ 5.150,00
-                        <span class="preco"></span></div>
-                    <div class="text-3xl md:text-3xl my-1 font-bold text-black">R$ 3.100,00 <span
-                            class="preco-novo"></span>
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
                     </div>
+                    <div class="product-price flex flex-row mt-1 items-center">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+                    
+                    <div class="text-md my-1">em 5x R$ 5</div>
                 </div>
 
-                <ul class="flex justify-center">
+                <ul class="flex">
                     <li class="icone mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
@@ -228,14 +237,50 @@
                     <li class="icone mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
+                    <li class=" mx-2 my-2">
+                        <i class="las la-user la-1x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-azul-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta básica azul-marinho
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price flex flex-row mt-1 items-center">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+                    
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul class="flex">
                     <li class="icone mx-2 my-2">
+                        <i class="las la-user la-1x"></i>
+                    </li>
+                    <li class="icone mx-2 my-2">
+                        <i class="las la-user la-1x"></i>
+                    </li>
+                    <li class="icone mx-2 my-2">
+                        <i class="las la-user la-1x"></i>
+                    </li>
+                    <li class="icone mx-2 my-2">
+                        <i class="las la-user la-1x"></i>
+                    </li>
+                    <li class=" mx-2 my-2">
                         <i class="las la-user la-1x"></i>
                     </li>
                 </ul>
             </div>
         </div>
-
-
     </div>
 </body>
 
