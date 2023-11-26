@@ -34,6 +34,18 @@ nav ul li:hover #sub-menu{
     margin-left: -38px;
 }
 
+.card {
+    padding: 8px;
+    border: 2px solid rgba(81, 88, 112, .4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    border-color: #B35FD0;
+}
+
 .imagem-produto{
     width: 10%;
     height: 150px;
