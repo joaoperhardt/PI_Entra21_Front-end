@@ -40,6 +40,7 @@ nav ul li:hover #sub-menu{
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .card:hover {
@@ -47,9 +48,9 @@ nav ul li:hover #sub-menu{
 }
 
 .imagem-produto{
-    width: 10%;
-    height: 150px;
-    margin-right: 100px;
+   max-width: 340px;
+   max-height: 340px;
+   justify-self: center;
 }
 
 .icone {
