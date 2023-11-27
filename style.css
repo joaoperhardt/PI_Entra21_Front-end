@@ -84,7 +84,9 @@ body {
 }
 
 .user-comment {
-    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
 }
 
 .user-comment-icon {
@@ -98,6 +100,7 @@ body {
 }
 
 .user-comment-message {
+    margin-top: 8px;
     margin-left: 8px;
 }
 
