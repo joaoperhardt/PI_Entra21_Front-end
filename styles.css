@@ -1,0 +1,106 @@
+@font-face {
+    font-family: HammersmithOne-Regular;
+    src: url(assets/fonte/HammersmithOne-Regular.ttf);
+}
+
+/* corpo */
+body {
+    font-family: 'HammersmithOne-Regular';
+    font-size: 15px;
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* título do carrinho */
+.cart-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Adicionando margens nos cantos */
+.site-container {
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* logo do cabeçalho */
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
+}
+
+/* imagem do cabeçalho */
+.header-logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px
+}
+
+/* células da tabela */
+th,
+td {
+
+    padding: 2px;
+    border: 1px solid #f4f3f3;
+    text-align: center;
+}
+
+/* botão de remover item na tabela */
+.product_button button {
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgb(228, 225, 249)
+}
+
+/* botão de finalizar compra */
+#button {
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Mídia Query para mobile */
+@media (max-width: 390px) {
+    .container {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+    button {
+        padding: 6px 12px;
+        margin-bottom: 6px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 20px;
+    }
+}
