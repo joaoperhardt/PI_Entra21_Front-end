@@ -87,8 +87,30 @@ nav ul li:hover #sub-menu{
     align-items: center;
 }
 
+.card ul {
+    display: flex;
+    justify-content: center;
+}
+
+.card i {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+    .card i {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
 .volunteer-icon {
+    margin: 8px;
     color: #B35FD0;
+}
+
+.empty-icon {
+    margin: 8px;
 }
 
 #img-content{
