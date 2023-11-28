@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Hammersmith One';
-    src: url(./font/Hammersmith_One/HammersmithOne-Regular.ttf);
+    src: url(./assets/font/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: #fff;
     justify-content: center;
-}  
+}
 
 #header {
     height: 92px;
@@ -24,28 +24,28 @@ body {
     padding: 16px;
     width: 400px;
     color: #8e44ad;
-  }
-  
-  
-  .login-container h2 {
+}
+
+
+.login-container h2 {
     font-size: px;
     color: #8e44ad;
-  }
-  
-  .login-container p {
+}
+
+.login-container p {
     font-size: 16px;
     color: #000000;
     margin-bottom: 16px;
-  }
-  
-  .login-form label {
+}
+
+.login-form label {
     font-size: 20px;
     color: #000000;
     margin-bottom: 0px;
     margin-top: 20px;
-  }
-  
-  .login-form input {
+}
+
+.login-form input {
     width: 100%;
     padding: 16px;
     margin: 8px 0;
@@ -54,23 +54,23 @@ body {
     transition: border-color 0.3s;
     font-size: 20px;
     border-radius: 5px;
-  }
-  
-  .login-form input:focus {
+}
+
+.login-form input:focus {
     border-color: #8e44ad;
     outline: none;
-  }
+}
 
-  .forgot-password {
+.forgot-password {
     color: #555;
     font-size: 16px;
-  }
-  
-  .login-text {
-    margin-left: 5px;
-  }
+}
 
-  .login-form button {
+.login-text {
+    margin-left: 5px;
+}
+
+.login-form button {
     background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
     color: #fff;
     width: 100%;
@@ -80,18 +80,18 @@ body {
     font-size: 24px;
     margin-top: 10px;
     border-radius: 5px;
-  }
-  
-  .signup-link {
+}
+
+.signup-link {
     color: #000000;
     margin-top: 16px;
     font-size: 20px;
-  }
-  
-  .password-box {
+}
+
+.password-box {
     background-color: #cccccc67;
-  }
-  
-  .email-box {
+}
+
+.email-box {
     background-color: #cccccc67;
-  }
+}
