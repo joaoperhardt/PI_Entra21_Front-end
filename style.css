@@ -4,7 +4,7 @@
 }
 *{
     font-family: Hammersmith One !important;
-    font-size: 15px git;
+    font-size: 15px;
 }
 #header {
     display: flex;
@@ -41,7 +41,6 @@ label{
 #button-continuar{
     background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
     color: #fff;
-    height: 40px;
     width: 321px;
     border-radius: 4%;
     margin-top: 85px;
@@ -62,7 +61,7 @@ label{
     margin-left: 25%;
 }
 input{
-    border-color: transparent;
+    border: none;
 }
 #descricao-loja{
     width: 100%;
@@ -71,9 +70,6 @@ textarea{
     resize: none;
 }
 select:hover{
-    cursor: pointer;
-}
-option:hover{
     cursor: pointer;
 }
 #banner{
@@ -96,11 +92,18 @@ option:hover{
     background-color: #cccccc67;
 }
 @media only screen and (max-width: 680px) {
+    *{
+        font-family: Hammersmith one;
+        font-size: 13px !important;
+    }
+    label{
+        font-size: 13px !important;
+    }
     #banner {
         background-color: #cccccc67;
         height: 187px;
-        position: relative;
         width: 358px;
+        position: relative;
         display: flex;
         border-radius: 4%;
         margin-bottom: 50px;
@@ -115,4 +118,4 @@ option:hover{
         margin-left: 26px;
         background-color: #cccccc67;
     }
-    }
+}
