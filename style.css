@@ -1,21 +1,155 @@
 @font-face {
     font-family: 'Hammersmith One';
-    src: url(./font/Hammersmith_One/HammersmithOne-Regular.ttf);
+    src: url(./assets/font/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
 
 body {
     font-family: 'Hammersmith One';
+    color: rgba(0, 0, 0, .8);
     margin: 0;
     padding: 0;
     height: 100vh;
     background-color: #fff;
     justify-content: center;
-}  
+}
 
 #header {
     height: 92px;
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
     align-content: center;
+}
+
+#header-content {
+    justify-self: center;
+}
+
+#header-search-bar {
+    width: 552px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+#header-search-bar-input {
+    font-size: 16px;
+    font-weight: 400px;
+    flex-grow: 1;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 8px 16px 8px 16px;
+    padding: 15px;
+}
+
+.sub-menu {
+    width: 144px;
+    display: none;
+    text-align: center;
+    border-radius: 12px;
+    color: #000;
+}
+
+.sub-menu li {
+    border-radius: 8px;
+}
+
+.sub-menu li:hover {
+    background-color: #B35FD0;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(211, 211, 211);
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+.filter {
+    margin-top: 24px;
+    font-size: medium;
+}
+
+.filter h1 {
+    font-weight: bold;
+}
+
+.filter ul {
+    margin-top: 16px;
+    list-style-type: none;
+}
+
+.filter li {
+    margin-top: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.filter li:hover {
+    color: #B35FD0;
+}
+
+#price-filter input::-webkit-outer-spin-button,
+#price-filter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card {
+    padding: 8px;
+    border: 2px solid rgba(81, 88, 112, .4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #B35FD0;
+}
+
+.imagem-produto {
+    max-width: 264px;
+    max-height: 264px;
+    justify-self: center;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.card ul {
+    display: flex;
+    justify-content: center;
+}
+
+.card i {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+    .card i {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+.volunteer-icon {
+    margin: 8px;
+    color: #B35FD0;
+}
+
+.empty-icon {
+    margin: 8px;
+}
+
+#img-content {
+    text-align: center;
 }
 
 .login-container {
@@ -24,28 +158,28 @@ body {
     padding: 16px;
     width: 400px;
     color: #8e44ad;
-  }
-  
-  
-  .login-container h2 {
+}
+
+
+.login-container h2 {
     font-size: px;
     color: #8e44ad;
-  }
-  
-  .login-container p {
+}
+
+.login-container p {
     font-size: 16px;
     color: #000000;
     margin-bottom: 16px;
-  }
-  
-  .login-form label {
+}
+
+.login-form label {
     font-size: 20px;
     color: #000000;
     margin-bottom: 0px;
     margin-top: 20px;
-  }
-  
-  .login-form input {
+}
+
+.login-form input {
     width: 100%;
     padding: 16px;
     margin: 8px 0;
@@ -54,23 +188,23 @@ body {
     transition: border-color 0.3s;
     font-size: 20px;
     border-radius: 5px;
-  }
-  
-  .login-form input:focus {
+}
+
+.login-form input:focus {
     border-color: #8e44ad;
     outline: none;
-  }
+}
 
-  .forgot-password {
+.forgot-password {
     color: #555;
     font-size: 16px;
-  }
-  
-  .login-text {
-    margin-left: 5px;
-  }
+}
 
-  .login-form button {
+.login-text {
+    margin-left: 5px;
+}
+
+.login-form button {
     background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
     color: #fff;
     width: 100%;
@@ -80,18 +214,18 @@ body {
     font-size: 24px;
     margin-top: 10px;
     border-radius: 5px;
-  }
-  
-  .signup-link {
+}
+
+.signup-link {
     color: #000000;
     margin-top: 16px;
     font-size: 20px;
-  }
-  
-  .password-box {
+}
+
+.password-box {
     background-color: #cccccc67;
-  }
-  
-  .email-box {
+}
+
+.email-box {
     background-color: #cccccc67;
-  }
+}
