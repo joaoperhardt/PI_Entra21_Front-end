@@ -74,7 +74,7 @@ select:hover, option:hover{
     cursor: pointer;
 }
 #banner{
-    background-color: gray;
+    background-color: #CCCCCC67;
     height: 200px;
     position: relative;
 }
