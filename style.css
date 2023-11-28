@@ -1,19 +1,16 @@
-/* body {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-} */
-
 @font-face {
-    font-family: "Hammersmith One";
-    src: url(./assets/font/HammersmithOne-Regular.ttf);
+    font-family: 'Hammersmith One';
+    src: url(./assets/font/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
 
 body {
-    font-family: "Hammersmith One";
-    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Hammersmith One';
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+    justify-content: center;
 }
 
 #header {
@@ -129,6 +126,36 @@ nav ul li:hover .sub-menu {
     margin-left: 8px;
 }
 
+.filter {
+    margin-top: 24px;
+    font-size: medium;
+}
+
+.filter h1 {
+    font-weight: bold;
+}
+
+.filter ul {
+    margin-top: 16px;
+    list-style-type: none;
+}
+
+.filter li {
+    margin-top: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.filter li:hover {
+    color: #B35FD0;
+}
+
+#price-filter input::-webkit-outer-spin-button,
+#price-filter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .card {
     padding: 8px;
     border: 2px solid rgba(81, 88, 112, .4);
@@ -143,10 +170,10 @@ nav ul li:hover .sub-menu {
     border-color: #B35FD0;
 }
 
-.imagem-produto{
-   max-width: 264px;
-   max-height: 264px;
-   justify-self: center;
+.imagem-produto {
+    max-width: 264px;
+    max-height: 264px;
+    justify-self: center;
 }
 
 .product-price {
@@ -182,6 +209,84 @@ nav ul li:hover .sub-menu {
     margin: 8px;
 }
 
-#img-content{
+#img-content {
     text-align: center;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    width: 400px;
+    color: #8e44ad;
+}
+
+
+.login-container h2 {
+    font-size: px;
+    color: #8e44ad;
+}
+
+.login-container p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.login-form label {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.login-form input:focus {
+    border-color: #8e44ad;
+    outline: none;
+}
+
+.forgot-password {
+    color: #555;
+    font-size: 16px;
+}
+
+.login-text {
+    margin-left: 5px;
+}
+
+.login-form button {
+    background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.signup-link {
+    color: #000000;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.password-box {
+    background-color: #cccccc67;
+}
+
+.email-box {
+    background-color: #cccccc67;
 }
