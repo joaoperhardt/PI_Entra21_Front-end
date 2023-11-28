@@ -70,19 +70,49 @@ input{
 textarea{
     resize: none;
 }
-select:hover, option:hover{
+select:hover{
+    cursor: pointer;
+}
+option:hover{
     cursor: pointer;
 }
 #banner{
-    background-color: #CCCCCC67;
+    background-color: #cccccc67;
     height: 200px;
     position: relative;
+    width: 650px;
+    display: flex;
+    border-radius: 4%;
+    margin-bottom: 50px;
 }
 #img-perfil{
-    width: 198px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     border-radius: 100%;
     border: 20px solid white;
     position: absolute;
     bottom: -90px;
+    margin-left: 26px;
+    background-color: #cccccc67;
 }
+@media only screen and (max-width: 680px) {
+    #banner {
+        background-color: #cccccc67;
+        height: 187px;
+        position: relative;
+        width: 358px;
+        display: flex;
+        border-radius: 4%;
+        margin-bottom: 50px;
+    }
+    #img-perfil{
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        border: 13px solid white;
+        position: absolute;
+        bottom: -65px;
+        margin-left: 26px;
+        background-color: #cccccc67;
+    }
+    }
