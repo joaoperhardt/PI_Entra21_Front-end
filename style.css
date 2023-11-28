@@ -20,6 +20,25 @@
     height: 140px;
     margin-top: 10px;
 }
+#titulo-cadastro-loja{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+#form-cadastro-loja{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: #581c87;
+    justify-content: center;
+}
+label{
+    display: block;
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+    margin-top: 19px !important;
+}
 #nome, #cep, #data, #email, #telefone, #password, #button-continuar {
     background-color: #cccccc67;
     border-radius: 4%;
@@ -36,6 +55,80 @@
     border-radius: 4%;
     margin-top: 85px;
     height: 102px;
+}
+HEAD
+#nome-loja, #descricao-loja, #cep, #estado, #cidade, #bairro, #rua, #numero, #complemento, #contato-loja, #cpf-loja, #cnpj-loja, #senha-confirmar-loja,  #button-continuar{
+    background-color: #cccccc67;
+    border-radius: 4%;
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 16px ;    
+    font-size: 20px;
+}
+#buscar-cep{
+    color: #581c87;
+    font-size: 43%;
+    text-decoration: underline;
+    margin-left: 25%;
+}
+input{
+    border: none;
+}
+#descricao-loja{
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+select:hover{
+    cursor: pointer;
+}
+#banner{
+    background-color: #cccccc67;
+    height: 200px;
+    position: relative;
+    width: 650px;
+    display: flex;
+    border-radius: 4%;
+    margin-bottom: 50px;
+}
+#img-perfil{
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    border: 20px solid white;
+    position: absolute;
+    bottom: -90px;
+    margin-left: 26px;
+    background-color: #cccccc67;
+}
+@media only screen and (max-width: 680px) {
+    *{
+        font-family: Hammersmith one;
+        font-size: 13px !important;
+    }
+    label{
+        font-size: 13px !important;
+    }
+    #banner {
+        background-color: #cccccc67;
+        height: 187px;
+        width: 358px;
+        position: relative;
+        display: flex;
+        border-radius: 4%;
+        margin-bottom: 50px;
+    }
+    #img-perfil{
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        border: 13px solid white;
+        position: absolute;
+        bottom: -65px;
+        margin-left: 26px;
+        background-color: #cccccc67;
+    }
 }
 #form1{
     border-color: #581c87;
