@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
     font-family: Hammersmith One;
     src: url(./assets/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
@@ -57,7 +56,6 @@ label{
     font-size: 68%;
     text-decoration: underline;
     margin-left: 65%; color: #581c87;
-=======
     font-family: 'Hammersmith One';
     src: url(./assets/font/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
@@ -348,5 +346,4 @@ nav ul li:hover .sub-menu {
 
 .email-box {
     background-color: #cccccc67;
->>>>>>> 48fa32fc0872c9bdccd7d7eb124c020eb8a282ec
 }
