@@ -4,13 +4,13 @@
 }
 *{
     font-family: Hammersmith One !important;
-    font-size: 15px ;
+    font-size: 15px git;
 }
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100% !important;
     height: 80px;
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
 }
@@ -25,10 +25,12 @@
     padding: 2%;
 }
 #form-cadastro-loja{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-color: #581c87;
+    justify-content: center;
 }
 label{
     display: block;
@@ -48,20 +50,39 @@ label{
 #nome-loja, #descricao-loja, #cep, #estado, #cidade, #bairro, #rua, #numero, #complemento, #contato-loja, #cpf-loja, #cnpj-loja, #senha-confirmar-loja,  #button-continuar{
     background-color: #cccccc67;
     border-radius: 4%;
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin-bottom: 16px ;    
     font-size: 20px;
 }
 #buscar-cep{
     color: #581c87;
-    font-size: 68%;
+    font-size: 43%;
     text-decoration: underline;
-    margin-left: 37%;
+    margin-left: 25%;
 }
 input{
     border-color: transparent;
 }
 #descricao-loja{
     width: 100%;
+}
+textarea{
+    resize: none;
+}
+select:hover, option:hover{
+    cursor: pointer;
+}
+#banner{
+    background-color: gray;
+    height: 200px;
+    position: relative;
+}
+#img-perfil{
+    width: 198px;
+    height: 180px;
+    border-radius: 100%;
+    border: 20px solid white;
+    position: absolute;
+    bottom: -90px;
 }

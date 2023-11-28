@@ -6,23 +6,18 @@
     <title>Tela Cadastro de Loja</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <script src="https://tailwindcss.com/"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header id="header">
         <div class="content flex item-center justify-center"><img id="logo" src="./assets/Logo-We-Buy-It.png" alt="Logo-We-Buy-It"></div>
     </header>
     <div id="titulo-cadastro-loja"><h1>Cadastro de Loja</h1></div>
-    <div id="add-imagens">
-        <div id="add-banner">
-           <input type="image" style="border: double;" height="90" width="100%"/>
-        </div>
-        <div id="add-foto">
-            <input type="image" style="border: 20px" height="40" width="40" id="">
-        </div>
-    </div>
+   <div id="banner">
+    <img id="img-perfil" src="./assets/Logo-We-Buy-It.png" alt="perfil">
+   </div>
     <form id="form-cadastro-loja" action="">
-        <div id="text-areas">
+        <div id="text-areas" class="w-80">
             <div>
             <label for="nome-loja" class="w-80">Nome da Loja</label>
             <input type="text" id="nome-loja" required>
@@ -30,8 +25,8 @@
             <div>
                 <label for="descricao-loja">Descrição da loja</label>
             </div>
-            <div>
-                <textarea name="descricao" id="descricao-loja" cols="5" rows="5"></textarea>
+            <div class="w-80">
+                <textarea name="descricao" id="descricao-loja" cols="4" rows="4"></textarea>
             </div>
             <div>
                 <label for="cep" >CEP da loja<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
@@ -40,12 +35,12 @@
             <div id="localizacao">
                 <label for="localizacao-loja">Localização da loja</label>
                 <select name="estado" id="estado">
-                    <option value="1"></option>
+                    <option value="1">ESTADO</option>
                     <option value="2">RJ</option>
                     <option value="3">SP</option>
                     <option value="4">SC</option>
                 </select><select name="cidade" id="cidade">
-                    <option value="1"></option>
+                    <option value="1">CIDADE</option>
                     <option value="2">Blumenau</option>
                     <option value="3">Itajaí</option>
                     <option value="4">Floripa</option>
