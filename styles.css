@@ -10,6 +10,7 @@ body {
     background-color: #f7fafc;
     margin: 0;
     padding: 0;
+
 }
 
 /* título do carrinho */
@@ -45,7 +46,7 @@ body {
 }
 
 /* tabela */
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 5px
@@ -54,29 +55,31 @@ table {
 /* células da tabela */
 th,
 td {
-
     padding: 2px;
     border: 1px solid #f4f3f3;
     text-align: center;
 }
 
 /* botão de remover item na tabela */
-.product_button button {
+.product_button {
+    margin: 5px;
     padding: 5px;
     width: 80px;
     border-radius: 5px;
     font-size: 10px;
-    background-color: rgb(228, 225, 249)
+    background-color: rgb(228, 225, 249);
+
 }
 
 /* botão de finalizar compra */
-#button {
+#button-finalizar-commpra {
     color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 10px;
     width: 100%;
     margin-top: 10px;
+    align-items: center;
 }
 
 /* Mídia Query para mobile */
