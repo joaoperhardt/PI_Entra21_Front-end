@@ -26,18 +26,44 @@
             </div>
 
             <form class="login-form flex flex-col">
+                <label class="user-cpf-name" for="user-cpf">CPF:</label>
+                <input type="text" id="user-cpf" name="user-cpf">
+
                 <label class="card-name-write" for="card-name">Nome presente no cartão:</label>
-                <input type="text" id="card-name" name="card-name" required>
+                <input type="text" id="card-name" name="card-name">
     
                 <label class="card-number-write" for="card-number">Número do cartão:</label>
-                <input type="text" id="card-number" name="card-number" required>
+                <input type="text" id="card-number" name="card-number">
     
-                <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
-                        href="#">Esqueci
-                        minha senha</a></div>
-                <button type="submit">Login</button>
-                <p class="signup-link text-center text-black">Não tem cadastro? <a
-                        class="underline underline-offset-2 text-purple-900" href="#">Cadastre-se!</a></p>
+                <label class="card-cvv-write" for="card-cvv">CVV:</label>
+                <input type="text" id="card-cvv" name="card-cvv">
+
+                <label class="card-cvv-write" for="card-cvv">Data de vencimento:</label>
+                <div class="flex flex-row justify-between">
+                    <span class="flex flex-col">
+                        <label for="expiring-date-month">Mês:</label>
+                        <select class="text-xl font-bold text-center bg-[#cccccc67] py-5 px-8 my-2 rounded-lg max-wh-[66px] max-w-[75px] appearance-none" name="expiring-date-month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </span>
+                    <span class="flex flex-col">
+                        <label for="expiring-date-year">Ano (4 dígitos):</label>
+                        <input class="max-w-[200px]" type="text" id="expiring-date-year" name="expiring-date-year">
+                    </span>
+                </div>
+                
+                <button type="submit">Registrar</button>
             </form>
         </div>
     </div>
