@@ -65,6 +65,67 @@ nav ul li:hover .sub-menu {
     margin-left: -38px;
 }
 
+#discount-tag {
+    background-color: #B35FD0;
+    border-radius: 8px;
+}
+
+#product-quantity-setter select {
+    background: #d9d9d9;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+#product-buy-field {
+    justify-content: center;
+}
+
+#product-buy-field button {
+    padding: 2px 4px;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+#add-to-cart-button {
+    border: 2px solid #B35FD0;
+}
+
+#buy-button {
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+}
+
+.product-tag {
+    border: 2px solid #B35FD0;
+    border-radius: 24px;
+    padding: 8px 24px 8px 24px;
+    color: #B35FD0;
+    font-weight: 600;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.user-comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+}
+
+.user-comment-icon {
+    height: 32px;
+    border-radius: 50%;
+}
+
+.user-comment-name {
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.user-comment-message {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
 .filter {
     margin-top: 24px;
     font-size: medium;
