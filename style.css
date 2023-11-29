@@ -440,3 +440,9 @@ nav ul li:hover .sub-menu {
 .email-box {
     background-color: #cccccc67;
 }
+
+.profile-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
