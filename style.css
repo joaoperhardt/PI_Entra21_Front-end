@@ -144,14 +144,7 @@ label{
     font-size: 30px;
     padding: 2%;
 }
-#buscar-cep{
-    color: #581c87;
-    font-size: 68%;
-    text-decoration: underline;
-    margin-left: 65%; color: #581c87;
-    font-family: 'Hammersmith One';
-    src: url(./assets/font/Hammersmith_One/HammersmithOne-Regular.ttf);
-}
+
 
 body {
     font-family: 'Hammersmith One';
