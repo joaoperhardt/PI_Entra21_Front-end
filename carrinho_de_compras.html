@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Meu Carrinho</title>
+</head>
+
+<body class="font-hammersmith-one bg-gray-100 min-h-screen">
+   <header class="header-logo">
+      <div class="container mx-auto py-4">
+         <div class="flex items-center">
+            <img src="img/logo.png" alt="logo" class="h-8">
+         </div>
+      </div>
+   </header>
+   <div class="site-container">
+      <div class="cart-title">
+         <h1 class="font-semibold">Meu Carrinho</h1>
+      </div>
+      <main class="my-5">
+         <div class="container mx-auto rounded-lg">
+            <div class="bg-white rounded-lg p-4 md:p-8 shadow">
+               <table class="w-full">
+                  <thead>
+                     <tr>
+                        <th></th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <div class="flex items-center">
+                              <img src="img/produto1.webp" alt="produto1" class="h-16">
+                           </div>
+                        </td>
+                        <td>Notebook <br> Acer</td>
+                        <td>Notebook Acer Nitro 5 AN515-58-58W3 Intel
+                           <br> Core i5 12ªgen Linux Gutta
+                           <br> 8GB 512GB SSD RTX3050 15.6” FHD
+                        </td>
+                        <td>R$ 5.500</td>
+                        <td>R$ 5.500</td>
+                        <td>
+                           <div class="product_button">
+                              <button id= button-remover-item-1 class="text-black py-1 rounded">Remover Item</button>
+                           </div>
+                        </td>
+                     <tr>
+                        <td>
+                           <div class="flex items-center">
+                              <img src="img/produto-2.jpg" alt="produto2" class="h-16">
+                           </div>
+                        </td>
+                        <td>Headset <br> HyperX</td>
+                        <td>Headset Gamer HyperX Cloud Core,
+                           <br> Som Surround 7.1, Drivers 53mm, P3 - 4P4F2AA
+                        </td>
+                        <td>R$ 199,99</td>
+                        <td>R$ 199,99</td>
+                        <td>
+                           <div class="product_button">
+                              <button id= button-remover-item-2 class="text-black py-1 rounded">Remover Item</button>
+                           </div>
+                  </tbody>
+               </table>
+               <div class="mt-4 text-center">
+                  <button id="button-endereco" class="flex items-center text-gray-700">
+                     <img src="img/endereço.png" alt="logo_adress" class="h-5 mr-2">
+                     <p class="text-sm">AV.Brasil, 000 - Blumenau - SC </p>
+                     <img src="img/seta-para-baixo.png" alt="seta para baixo" class="ml-2 h-4">
+                  </button>
+               </div>
+            </div>
+            <aside class="mt-4 md:mt-8">
+               <div class="bg-white rounded-lg p-4 md:p-8 shadow">
+                  <header class="text-lg font-semibold text-center">
+                     Resumo da compra
+                  </header>
+                  <div class="info mt-4">
+                     <div class="flex justify-between">
+                        <span>Frete</span>
+                        <span class="font-thin">Gratuito</span>
+                     </div>
+                     <div class="mt-4">
+                        <button id= button-cupom-desconto class="text-purple-600">Adicionar cupom de desconto</button>
+                     </div>
+                  </div>
+                  <footer class="flex justify-between mt-4">
+                     <span>Total</span>
+                     <span class="font-semibold">R$ 5.699,99</span>
+                  </footer>
+               </div>
+               <button id="button-finalizar-commpra" class="mt-4 md:mt-8 w-full bg-purple-600 text-white py-2 rounded">Finalize Sua
+                  Compra</button>
+            </aside>
+         </div>
+      </main>
+</body>
+</html>
