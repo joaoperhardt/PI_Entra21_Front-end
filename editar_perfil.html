@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+        <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+            <span id="header-logo" class="flex cursor-pointer">
+                <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
+                    alt="WeBuyIt logo">
+                <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+            </span>
+            <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
+                    type="text" placeholder="Pesquisar" value="camiseta basica">
+                <i class="las la-search flex m-4"></i>
+            </div>
+            <div id="header-icons" class="flex items-center">
+                <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
+                <i class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i>
+                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+                <i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-container p-5 text-center">
+        <div class="flex-col my-8 text-purple-900">
+            <p class="text-3xl">Editar Perfil:</p>
+        </div>
+        <div class="cellphone lg:hidden">
+            <div class="profile-header flex flex-col items-center">
+                <div class="profile-image-container">
+                    <div
+                        class="profile-image rounded-full w-[150px] h-[150px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                    <i id="edit" class="las la-pen text-4xl"></i>
+                </div>
+            </div>
+            <div class="profile-details">
+                <form class="profile-form mt-5 flex flex-col">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="cep">CEP</label>
+                    <input id="cep" name="cep" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                </form>
+            </div>
+            <div class="items-center flex flex-col">
+                <div class="border-b-4 p-2 ">
+                    <p class="mt-9 text-xl">Formas de pagamento:</p>
+                </div>
+                <p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar cartão
+                    +</p>
+                <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                        <p>Mastercard</p>
+                        <p>********6045</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                </div>
+
+                <div class="add-store">
+                    <div class="border-b-4 p-2">
+                        <p class="mt-9 text-xl">Suas Lojas:</p>
+                    </div>
+
+                    <p class="my-4 underline underline-offset-2 cursor-pointer text-purple-900">Adicionar Loja +</p>
+                    <div
+                        class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                    <button class="purple-button my-8">Salvar</button>
+                </div>
+            </div>
+        </div>
+        <div class="pc hidden lg:flex justify-center flex-col">
+            <div class="profile-container p-5 text-center flex flex-row justify-center">
+                <div class="profile-details flex">
+                    <form class="profile-form mt-5 flex flex-col w-[452px]">
+
+                        <label class="text-left" for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label class="text-left" for="cep">CEP</label>
+                        <input id="cep" name="cep" required>
+
+                        <label class="text-left" for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label class="text-left" for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                    </form>
+
+                    <div class="profile-header flex items-center ml-32 mb-32">
+                        <div class="profile-image-container">
+                            <div
+                                class="profile-image rounded-full w-[220px] h-[220px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            </div>
+                            <i id="edit" class="las la-pen text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-center mx-[240px]">
+                <p class="text-xl">Formas de pagamento:</p>
+              <p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center"> Adicionar
+                cartão +</p>
+                <div class="flex border-y-4 py-8">
+                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                      <p>Mastercard</p>
+                      <p>********6045</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                  </div>
+      
+                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center ml-12">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                      <p>Visa</p>
+                      <p>********0504</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                  </div>
+                </div>
+            </div>
+            <div class="add-store flex flex-col mx-[240px]">
+                <p class="mt-9 text-xl">Suas Lojas:</p>
+              <label class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4" for="add-store-plus">Adicionar Loja +</label>
+              <div class="flex border-y-4 py-8">
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+              </div>
+      
+            </div>
+            <div class="save-button">
+                <button class="purple-button my-8 w-[300px]">Salvar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
