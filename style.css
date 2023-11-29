@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-
-#header {   
-    height: 92px;
-   
-=======
 @font-face {
     font-family: Hammersmith One;
     src: url(./assets/Hammersmith_One/HammersmithOne-Regular.ttf);
@@ -18,13 +12,10 @@
     justify-content: center;
     width: 100%;
     height: 80px;
->>>>>>> 70683994489181b253ca9fbabb1adf2392128041
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
     align-content: center;
 }
 
-<<<<<<< HEAD
-=======
 #logo{
     width: 140px;
     height: 140px;
@@ -178,7 +169,6 @@ body {
     background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
     align-content: center;
 }
->>>>>>> 70683994489181b253ca9fbabb1adf2392128041
 
 #header-content {
     justify-self: center;
@@ -191,7 +181,6 @@ body {
 }
 
 #header-search-bar-input {
-<<<<<<< HEAD
     font-size: 12px;
     font-weight: 400px;
     opacity: .5;
@@ -206,11 +195,7 @@ body {
 
 
 
-=======
-    font-size: 16px;
-    font-weight: 400px;
-    flex-grow: 1;
-}
+    
 
 nav ul li {
     width: 120px;
@@ -467,4 +452,3 @@ nav ul li:hover .sub-menu {
 .email-box {
     background-color: #cccccc67;
 }
->>>>>>> 70683994489181b253ca9fbabb1adf2392128041
