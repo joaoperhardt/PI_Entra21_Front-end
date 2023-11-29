@@ -2,31 +2,44 @@
     font-family: Hammersmith One;
     src: url(./assets/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
-*{
+
+* {
     font-family: Hammersmith One;
     font-size: 15px;
 }
+
+body {
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+    justify-content: center;
+}
+
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 80px;
-    background: li(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%); 
+    background: li(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
     align-content: center;
 }
 
-#logo{
+#logo {
     width: 140px;
     height: 140px;
     margin-top: 10px;
 }
-#titulo-cadastro-loja{
+
+#titulo-cadastro-loja {
     text-align: center;
     font-size: 30px;
     padding: 2%;
 }
-#form-cadastro-loja{
+
+#form-cadastro-loja {
     position: relative;
     display: flex;
     align-items: center;
@@ -34,13 +47,20 @@
     border-color: #581c87;
     justify-content: center;
 }
-label{
+
+label {
     display: block;
     font-size: 28px !important;
     margin-bottom: 10px !important;
     margin-top: 19px !important;
 }
-#nome, #cep, #data, #email, #telefone, #password{
+
+#nome,
+#cep,
+#data,
+#email,
+#telefone,
+#password {
     background-color: #cccccc67;
     border-radius: 4%;
     width: 100%;
@@ -48,7 +68,8 @@ label{
     margin-bottom: 16px;
     font-size: 20px;
 }
-#button-continuar{
+
+#button-continuar {
     background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
     color: #fff;
     padding: 8px;
@@ -57,33 +78,51 @@ label{
     height: 46px;
     width: 100%;
 }
-HEAD
-#nome-loja, #descricao-loja, #cep, #estado, #cidade, #bairro, #rua, #numero, #complemento, #contato-loja, #cpf-loja, #cnpj-loja, #senha-confirmar-loja {
+
+HEAD #nome-loja,
+#descricao-loja,
+#cep,
+#estado,
+#cidade,
+#bairro,
+#rua,
+#numero,
+#complemento,
+#contato-loja,
+#cpf-loja,
+#cnpj-loja,
+#senha-confirmar-loja {
     background-color: #cccccc67;
     border-radius: 4%;
     width: 100%;
     padding: 8px;
-    margin-bottom: 16px ;    
+    margin-bottom: 16px;
     font-size: 20px;
 }
-#buscar-cep{
+
+#buscar-cep {
     color: #581c87;
     text-decoration: underline;
     margin-left: 46%;
 }
-input{
+
+input {
     border: none;
 }
-#descricao-loja{
+
+#descricao-loja {
     width: 100%;
 }
-textarea{
+
+textarea {
     resize: none;
 }
-select:hover{
+
+select:hover {
     cursor: pointer;
 }
-#banner{
+
+#banner {
     background-color: #cccccc67;
     height: 200px;
     position: relative;
@@ -92,7 +131,8 @@ select:hover{
     border-radius: 4%;
     margin-bottom: 50px;
 }
-#img-perfil{
+
+#img-perfil {
     width: 190px;
     height: 190px;
     border-radius: 100%;
@@ -102,14 +142,17 @@ select:hover{
     margin-left: 26px;
     background-color: #cccccc67;
 }
+
 @media only screen and (max-width: 680px) {
-    *{
+    * {
         font-family: Hammersmith one;
         font-size: 13px !important;
     }
-    label{
+
+    label {
         font-size: 13px !important;
     }
+
     #banner {
         background-color: #cccccc67;
         height: 187px;
@@ -119,7 +162,8 @@ select:hover{
         border-radius: 4%;
         margin-bottom: 50px;
     }
-    #img-perfil{
+
+    #img-perfil {
         width: 130px;
         height: 130px;
         border-radius: 100%;
@@ -130,29 +174,22 @@ select:hover{
         background-color: #cccccc67;
     }
 }
-#form1{
+
+#form1 {
     border-color: #581c87;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-label{
+
+label {
     display: block;
 }
-#title-cadastro{
+
+#title-cadastro {
     text-align: center;
     font-size: 30px;
     padding: 2%;
-}
-
-body {
-    font-family: 'Hammersmith One';
-    color: rgba(0, 0, 0, .8);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #fff;
-    justify-content: center;
 }
 
 #header {
@@ -460,7 +497,7 @@ nav ul li:hover .sub-menu {
     color: #000000;
     margin-bottom: 0px;
     margin-top: 20px;
-  }
+}
 
 .profile-form input {
     border: 2px solid transparent;
@@ -478,15 +515,15 @@ nav ul li:hover .sub-menu {
     background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
     font-size: 18px;
     border-radius: 5px;
-  }
+}
 
 .profile-form input {
     background-color: #cccccc67;
     height: 52px;
-    
+
 }
 
-#edit{
+#edit {
     color: #8e44ad;
     cursor: pointer;
 }

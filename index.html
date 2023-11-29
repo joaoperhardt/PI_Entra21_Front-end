@@ -11,25 +11,22 @@
 </head>
 
 <body>
-
-
-
   <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 relative border-collapse items-center justify-center">
     <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
-      <span id="header-logo" class="flex">
+      <span id="header-logo" class="flex cursor-pointer">
         <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/Sem Título-4.png" alt="WeBuyIt logo">
         <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/header logo.png" alt="WeBuyIt title">
       </span>
       <div id="header-search-bar" class="bg-white align-center items-center mx-8 hidden sm:flex lg:flex">
-        <input id="header-search-bar-input" class="flex m-4" type="text" placeholder="Pesquisar"></h6>
-        <i class="las la-search flex m-4"></i>
+        <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none" type="text"
+          placeholder="Pesquisar"></h6>
+        <i class="las la-search flex m-4 cursor-pointer"></i>
       </div>
       <div id="header-icons" class="flex items-center">
         <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
-        <i class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex"></i>
-        <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex"></i>
-        <i class="las la-user-circle la-2x lg:mx-4"></i>
-        <i class="las la-bars  md:hidden la-2x lg:hidden 2xl:hidden "></i>
+        <i class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i>
+        <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+        <i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i>
       </div>
     </div>
   </header>
