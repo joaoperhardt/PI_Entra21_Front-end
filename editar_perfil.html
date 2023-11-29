@@ -90,7 +90,36 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="pc hidden lg:flex justify-center flex-col">
+            <div class="profile-container p-5 text-center flex flex-row justify-center">
+                <div class="profile-details flex">
+                    <form class="profile-form mt-5 flex flex-col w-[452px]">
+
+                        <label class="text-left" for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label class="text-left" for="cep">CEP</label>
+                        <input id="cep" name="cep" required>
+
+                        <label class="text-left" for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label class="text-left" for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                    </form>
+
+                    <div class="profile-header flex items-center ml-32 mb-32">
+                        <div class="profile-image-container">
+                            <div
+                                class="profile-image rounded-full w-[220px] h-[220px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            </div>
+                            <i id="edit" class="las la-pen text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
