@@ -4,7 +4,7 @@
 }
 
 * {
-    font-family: Hammersmith One;
+    font-family: Hammersmith One  !important;
     font-size: 15px;
 }
 
@@ -103,7 +103,7 @@ HEAD #nome-loja,
 #buscar-cep {
     color: #581c87;
     text-decoration: underline;
-    margin-left: 46%;
+    margin-left: 12%;
 }
 
 input {
@@ -172,6 +172,10 @@ select:hover {
         bottom: -65px;
         margin-left: 26px;
         background-color: #cccccc67;
+    }
+
+    #buscar-cep{
+        margin-left: 35%;
     }
 }
 
