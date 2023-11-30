@@ -4,8 +4,8 @@
 }
 
 * {
-    font-family: Hammersmith One  !important;
-    font-size: 15px;
+    font-family: Hammersmith One;
+    font-size: 16px;
 }
 
 body {
@@ -55,30 +55,6 @@ label {
     margin-top: 19px !important;
 }
 
-#nome,
-#cep,
-#data,
-#email,
-#telefone,
-#password {
-    background-color: #cccccc67;
-    border-radius: 4%;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    font-size: 20px;
-}
-
-#button-continuar {
-    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
-    color: #fff;
-    padding: 8px;
-    border-radius: 4%;
-    margin-top: 20px;
-    height: 46px;
-    width: 100%;
-}
-
 HEAD #nome-loja,
 #descricao-loja,
 #cep,
@@ -98,12 +74,6 @@ HEAD #nome-loja,
     padding: 8px;
     margin-bottom: 16px;
     font-size: 20px;
-}
-
-#buscar-cep {
-    color: #581c87;
-    text-decoration: underline;
-    margin-left: 12%;
 }
 
 input {
@@ -177,34 +147,6 @@ select:hover {
     #buscar-cep{
         margin-left: 35%;
     }
-}
-
-#form1 {
-    border-color: #581c87;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-label {
-    display: block;
-}
-
-#title-cadastro {
-    text-align: center;
-    font-size: 30px;
-    padding: 2%;
-}
-
-
-body {
-    font-family: 'Hammersmith One';
-    color: rgba(0, 0, 0, .8);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #fff;
-    justify-content: center;
 }
 
 #header {
