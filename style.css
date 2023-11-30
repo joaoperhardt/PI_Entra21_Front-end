@@ -33,49 +33,6 @@ body {
     margin-top: 10px;
 }
 
-#titulo-cadastro-loja {
-    text-align: center;
-    font-size: 30px;
-    padding: 2%;
-}
-
-#form-cadastro-loja {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-color: #581c87;
-    justify-content: center;
-}
-
-label {
-    display: block;
-    font-size: 28px !important;
-    margin-bottom: 10px !important;
-    margin-top: 19px !important;
-}
-
-HEAD #nome-loja,
-#descricao-loja,
-#cep,
-#estado,
-#cidade,
-#bairro,
-#rua,
-#numero,
-#complemento,
-#contato-loja,
-#cpf-loja,
-#cnpj-loja,
-#senha-confirmar-loja {
-    background-color: #cccccc67;
-    border-radius: 4%;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    font-size: 20px;
-}
-
 input {
     border: none;
 }
