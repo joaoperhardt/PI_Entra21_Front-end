@@ -113,12 +113,6 @@ nav ul li:hover .sub-menu {
     color: #8e44ad;
 }
 
-.profile-details input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
 .purple-button {
     background-color: #8e44ad;
     color: #fff;
