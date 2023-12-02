@@ -57,7 +57,7 @@ $(() => {
     })
 })
 
-function InvalidateInput(msg, id) {
+function InvalidateInput(msg="", id="") {
     alert(msg)
     $(id).addClass("invalid-label")
 }
