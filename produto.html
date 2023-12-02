@@ -21,7 +21,8 @@
                 <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/header logo.png" alt="WeBuyIt title">
             </span>
             <div id="header-search-bar" class="bg-white align-center items-center mx-8 hidden sm:flex lg:flex">
-                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none" type="text" placeholder="Pesquisar"></h6>
+                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
+                    type="text" placeholder="Pesquisar"></h6>
                 <i class="las la-search flex m-4 cursor-pointer"></i>
             </div>
             <div id="header-icons" class="flex items-center">
@@ -32,6 +33,7 @@
             </div>
         </div>
     </header>
+
     <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
         <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
             <li>
@@ -39,7 +41,7 @@
                 <div class="sub-menu">
                     <ul class="block">
                         <li> <a href="#"> Viagem </a> </li>
-                        <li> <a href="#"> Camping </a> </li>   
+                        <li> <a href="#"> Camping </a> </li>
                         <li> <a href="#"> Praia </a> </li>
                         <li> <a href="#"> Pesca </a> </li>
                         <li> <a href="#"> Serviços </a> </li>
@@ -113,7 +115,7 @@
         </ul>
     </nav>
 
-    <div class="main-div h-[100vh] lg:mx-[240px]">
+    <div class="main-div h-[100vh] xl:mx-auto xl:max-w-[1424px]">
         <div id="product-div" class="p-4">
 
             <div class="hidden lg:flex lg:flex-row justify-between">
@@ -170,10 +172,10 @@
                             </span>
                         </div>
                         <div class="flex flex-col">
-                            <button id="add-to-cart-button" type="submit">
+                            <button class="add-to-cart-button" type="button">
                                 <p class="text-2xl py-2">Adicionar ao carrinho</p>
                             </button>
-                            <button id="buy-button" type="submit">
+                            <button class="buy-button" type="button">
                                 <p class="text-2xl text-white py-2">Comprar</p>
                             </button>
                         </div>
@@ -212,15 +214,19 @@
                 <div id="product-info" class="">
                     <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
                     <p class="text-2xl mt-4">R$ 500,00</p>
-                    <span id="product-price" class="flex items-center">
+                    <span id="product-price" class="flex items-center justify-between">
                         <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
                         <span class="ml-4 items-center">
                             <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
                         </span>
                     </span>
-                    <div class="mt-4 justify-center">
-                        <img class="h-12 lg:hidden" src="./assets/images/image 2.png" alt="volunteers">
-                        <p class="lg:hidden">Voluntários</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <i class="las la-user la-3x text-[#B35FD0]"></i>
+                        <i class="las la-user la-3x text-[#B35FD0]"></i>
+                        <i class="las la-user la-3x text-[#B35FD0]"></i>
+                        <i class="las la-user la-3x"></i>
+                        <i class="las la-user la-3x"></i>
+                        <h1 class="text-[#B35FD0] text-3xl font-bold ml-2">3 / 5</h1>
                     </div>
                 </div>
                 <div id="product-buy-field" class="mt-4">
@@ -241,10 +247,10 @@
                         </span>
                     </div>
                     <div class="flex flex-col">
-                        <button id="add-to-cart-button" type="submit">
+                        <button class="add-to-cart-button" type="submit">
                             <p class="text-2xl py-2">Adicionar ao carrinho</p>
                         </button>
-                        <button id="buy-button" type="submit">
+                        <button class="buy-button" type="submit">
                             <p class="text-2xl text-white py-2">Comprar</p>
                         </button>
                     </div>
@@ -288,12 +294,12 @@
                 <div class="flex flex-row items-center">
                     <p class="text-xl font-bold">Avaliações</p>
                     <p class="text-2xl ml-6 mr-4">5,0</p>
-                    <span class="la-2x text-[#B35FD0]">
-                        <i class="las la-star"></i>
-                        <i class="las la-star"></i>
-                        <i class="las la-star"></i>
-                        <i class="las la-star"></i>
-                        <i class="las la-star"></i>
+                    <span class="text-[#B35FD0] items-center flex mb-1">
+                        <i class="las la-star text-2xl"></i>
+                        <i class="las la-star text-2xl"></i>
+                        <i class="las la-star text-2xl"></i>
+                        <i class="las la-star text-2xl"></i>
+                        <i class="las la-star text-2xl"></i>
                     </span>
                 </div>
 
@@ -529,7 +535,10 @@
 
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
         <script src="produto.js"></script>
+
+    </div>
 </body>
 
 </html>
