@@ -117,7 +117,6 @@
 
     <div class="main-div h-[100vh] xl:mx-auto xl:max-w-[1424px]">
         <div id="product-div" class="p-4">
-
             <div class="hidden lg:flex lg:flex-row justify-between">
                 <div id="column-left" class="flex flex-col justify-center">
                     <img id="product-image" class="w-3/3" src="./assets/images/Imagem do produto.png"
@@ -128,17 +127,22 @@
                         <i class="las la-user la-4x text-[#B35FD0]"></i>
                         <i class="las la-user la-4x"></i>
                         <i class="las la-user la-4x"></i>
-                        <h1 class="text-[#B35FD0] text-3xl font-bold ml-2">3 / 5</h1>
+                        <span class="text-[#B35FD0] text-3xl font-bold ml-2 flex flex-row">
+                            <h1 class="product-volunteers">3</h1>
+                            <h1 class="mx-2">/</h1>
+                            <h1 class="product-volunteers-needed">5</h1>
+                        </span>
                     </div>
                 </div>
 
                 <div id="column-center">
-                    <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
+                    <p class="product-name mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
                     <p class="text-2xl opacity-50 mt-4 line-through">R$ 500,00</p>
-                    <span id="product-price" class="flex items-center">
-                        <p class=" text-6xl font-bold">R$ 450,00</p>
+                    <span class="flex items-center">
+                        <p class="mt-1 mr-4 text-6xl font-bold">R$</p>
+                        <p class="product-price text-6xl font-bold">450,00</p>
                         <span class="ml-4 items-center">
-                            <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
+                            <p class="discount-tag text-3xl text-white p-1">-10%</p>
                         </span>
                     </span>
                     <div class="flex flex-row mt-4 text-xl">
@@ -158,8 +162,9 @@
                         <div class="flex flex-row items-center justify-between">
                             <span id="product-quantity-span" class="flex flex-row items-center">
                                 <label class="text-xl" for="product-quantity">Quantidade:</label>
-                                <span id="product-quantity-setter" class="">
-                                    <select class="text-xl font-bold ml-2 w-[62px] h-[40px]" name="product-quantity">
+                                <span>
+                                    <select class="product-quantity-setter text-xl font-bold ml-2 w-[62px] h-[40px]"
+                                        name="product-quantity">
                                         <option class="" value="1">1</option>
                                         <option class="" value="2">2</option>
                                     </select>
@@ -167,7 +172,8 @@
                             </span>
                             <span class="flex flex-row ">
                                 <p class="text-xl">Frete:&nbsp;
-                                <p class="text-xl font-bold">R$ 15,00</p>
+                                <p class="text-xl font-bold mr-2">R$</p>
+                                <p class="product-freight text-xl font-bold">15,00</p>
                                 </p>
                             </span>
                         </div>
@@ -201,10 +207,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
 
             <div class="lg:hidden">
                 <div class="lg:items-center lg:flex lg:justify-center">
@@ -212,12 +215,13 @@
                         alt="Product image">
                 </div>
                 <div id="product-info" class="">
-                    <p id="product-name" class="mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
+                    <p class="product-name mt-4 text-3xl lg:mt-6">ABBA Gold Vinil</p>
                     <p class="text-2xl mt-4">R$ 500,00</p>
-                    <span id="product-price" class="flex items-center justify-between">
-                        <p class=" text-5xl font-bold lg:text-6xl">R$ 450,00</p>
+                    <span class="flex items-center justify-between">
+                        <p class="mt-1 mr-4 text-6xl font-bold">R$</p>
+                        <p class="product-price text-5xl font-bold lg:text-6xl">R$ 450,00</p>
                         <span class="ml-4 items-center">
-                            <p id="discount-tag" class="text-3xl text-white p-1">-10%</p>
+                            <p class="discount-tag text-3xl text-white p-1">-10%</p>
                         </span>
                     </span>
                     <div class="flex justify-between items-center mt-4">
@@ -226,15 +230,20 @@
                         <i class="las la-user la-3x text-[#B35FD0]"></i>
                         <i class="las la-user la-3x"></i>
                         <i class="las la-user la-3x"></i>
-                        <h1 class="text-[#B35FD0] text-3xl font-bold ml-2">3 / 5</h1>
+                        <span class="text-[#B35FD0] text-3xl font-bold ml-2 flex flex-row">
+                            <h1 class="product-volunteers">3</h1>
+                            <h1 class="mx-2">/</h1>
+                            <h1 class="product-volunteers-needed">5</h1>
+                        </span>
                     </div>
                 </div>
                 <div id="product-buy-field" class="mt-4">
                     <div class="flex flex-row items-center justify-between">
                         <span id="product-quantity-span" class="flex flex-row items-center">
                             <label class="text-xl" for="product-quantity">Quantidade:</label>
-                            <span id="product-quantity-setter" class="">
-                                <select class="text-xl  font-bold ml-2 w-[62px] h-[40px]" name="product-quantity">
+                            <span>
+                                <select class="product-quantity-setter text-xl font-bold ml-2 w-[62px] h-[40px]"
+                                    name="product-quantity">
                                     <option class="" value="1">1</option>
                                     <option class="" value="2">2</option>
                                 </select>
@@ -242,7 +251,8 @@
                         </span>
                         <span class="flex flex-row">
                             <p class="text-xl">Frete:&nbsp;
-                            <p class="text-xl font-bold">R$ 15,00</p>
+                            <p class="text-xl font-bold mr-2">R$</p>
+                            <p class="product-freight text-xl font-bold">15,00</p>
                             </p>
                         </span>
                     </div>
@@ -386,7 +396,7 @@
                         <div class="md:flex flex-col md:justify-between">
                             <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 169
                             </div>
-                            <div class="product-price">
+                            <div class="product-price-card">
                                 <div class="text-2xl font-bold text-black">R$ 140 </div>
                                 <span class="text-md mb-1 ml-1 font-bold">00</span>
                                 <span class="ml-1 text-[#B35FD0] text-xl font-bold">-17%</span>
@@ -425,7 +435,7 @@
                         <div class="md:flex flex-col md:justify-between">
                             <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 150
                             </div>
-                            <div class="product-price">
+                            <div class="product-price-card">
                                 <div class="text-2xl font-bold text-black">R$ 130 </div>
                                 <span class="text-md mb-1 ml-1 font-bold">00</span>
                                 <span class="ml-1 text-[#B35FD0] text-xl font-bold">-15%</span>
@@ -463,7 +473,7 @@
                         <div class="md:flex flex-col md:justify-between">
                             <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 80
                             </div>
-                            <div class="product-price">
+                            <div class="product-price-card">
                                 <div class="text-2xl font-bold text-black">R$ 60 </div>
                                 <span class="text-md mb-1 ml-1 font-bold">00</span>
                                 <span class="ml-1 text-[#B35FD0] text-xl font-bold">-25%</span>
@@ -502,7 +512,7 @@
                         <div class="md:flex flex-col md:justify-between">
                             <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 150
                             </div>
-                            <div class="product-price">
+                            <div class="product-price-card">
                                 <div class="text-2xl font-bold text-black">R$ 130 </div>
                                 <span class="text-md mb-1 ml-1 font-bold">00</span>
                                 <span class="ml-1 text-[#B35FD0] text-xl font-bold">-15%</span>
