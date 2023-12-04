@@ -55,7 +55,8 @@ label {
 #buscar-cep {
     color: #581c87;
     text-decoration: underline;
-    margin-left: 12%;
+    margin-left: 26%;
+    font-size: 12px;
 }
 
 input {
