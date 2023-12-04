@@ -1,3 +1,4 @@
+
 #titulo-cadastro-loja {
     text-align: center;
     font-size: 30px;
@@ -128,4 +129,9 @@ select:hover {
     #buscar-cep{
         margin-left: 35%;
     }
+}
+#header {
+    height: 92px;
+    background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
+    align-content: center;
 }
