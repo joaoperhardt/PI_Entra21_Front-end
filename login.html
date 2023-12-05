@@ -28,20 +28,22 @@
 
             <form class="login-form flex flex-col">
                 <label class="email-write" for="username">E-mail</label>
-                <input class="email-box box-border text-black" type="text" id="username" name="username" required>
+                <input class="email-box box-border text-black" type="text" id="user-email" name="username">
     
                 <label class="password-write" for="password">Senha</label>
-                <input class="password-box text-black" type="password" id="password" name="password" required>
+                <input class="password-box text-black" type="password" id="user-password" name="password">
     
-                <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
+                <!-- <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
                         href="#">Esqueci
-                        minha senha</a></div>
-                <button type="submit">Login</button>
+                        minha senha</a></div> -->
+                <button id="login-button" type="button">Login</button>
                 <p class="signup-link text-center text-black">Não tem cadastro? <a
-                        class="underline underline-offset-2 text-purple-900" href="#">Cadastre-se!</a></p>
+                        class="underline underline-offset-2 text-purple-900" href="./Tela-Cadastro.html">Cadastre-se!</a></p>
             </form>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="login.js"></script>
 
 </body>
 
