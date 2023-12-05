@@ -5,7 +5,7 @@ function InvalidateInput(msg="", id="") {
 
 
  $(() => {
-    $("button-continuar-loja").click(() => {
+    $("#button-continuar-loja").click(() => {
         const valuesJson = {
             nomeloja: $("#nome-loja")[0].value,
             descricao: $("#descricao-loja")[0].value,
@@ -47,6 +47,54 @@ function InvalidateInput(msg="", id="") {
             return;
            }
          $("#cep-loja").removeClass("invalid-label")
+
+        if (valuesJson.estado == [1]){
+            InvalidateInput("Estado não informado", "#estado")
+            return;
+        }
+         $("#estado").removeClass("invalid-label")
+         
+        if (valuesJson.cidade == [1]){
+            InvalidateInput("Cidade não informada", "#cidade")
+            return;
+        }
+         $("#cidade").removeClass("invalid-label")
+         
+        if (!valuesJson.bairro){
+            InvalidateInput("Bairro não informado", "#bairro")
+            return;
+        } 
+         $("#bairro").removeClass("invalid-label")
+         
+        if (!valuesJson.rua){
+            InvalidateInput("Rua não informada", "#rua")
+            return;
+        } 
+         $("#rua").removeClass("invalid-label")
+         
+        if (!valuesJson.numero){
+            InvalidateInput("Número não informado", "#numero")
+            return;
+        } 
+         $("#numero").removeClass("invalid-label")   
+
+        if (!valuesJson.contato){
+            InvalidateInput("Contato da loja não informado", "#contato")
+            return;
+        }
+         $("#contato").removeClass("invalid-label")
+         
+        if (!valuesJson.cpf){
+            InvalidateInput("Cpf não informado", "#cpf-loja")
+            return;
+        } 
+        else if (valuesJson.cpf.length != 11){
+            InvalidateInput("O cpf deve conter 11 dígitos, sendo apenas números", "#cpf-loja")
+            return;
+        }
+         $("#cpf-loja").removeClass("invalid-label")
+         
+       
     }
     )
  })
