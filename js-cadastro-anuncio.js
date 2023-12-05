@@ -1,5 +1,4 @@
-
-$(function () {
+$(function() {
     const anuncio = {
         titulo: "",
         descricao: "",
@@ -10,17 +9,17 @@ $(function () {
     };
 
     // preenche as caixas de texto.
-    $.each(anuncio, function (campo, valor) {
+    $.each(anuncio, function(campo, valor) {
         $("#" + campo).val(valor);
     });
 
     // evento de para enviar formulario.
-    $("form").submit(function (event) {
+    $("form").submit(function(event) {
         event.preventDefault();
 
         // pega os dados preenchidos.
         const dadosFormulario = {};
-        $("form :input").each(function () {
+        $("form :input").each(function() {
             dadosFormulario[this.id] = $(this).val();
         });
 
@@ -32,8 +31,11 @@ $(function () {
         console.log("Dados do formulário:", dadosFormulario);
         console.log("Categoria selecionada:", categoriaSelecionada);
     });
-    
+
     //evento de clique onde aparece as cores diferentes nos botoes das categorias.
-    $(".categoria-button button").click(function () {
+    $(".categoria-button button").click(function() {
+        //mostra o botao selecionado.
+        $(".categoria-button button").removeClass("selected");
+        $(this).addClass("selected");
     });
 });
