@@ -33,4 +33,7 @@ $(function () {
         console.log("Categoria selecionada:", categoriaSelecionada);
     });
     
+    //evento de clique onde aparece as cores diferentes nos botoes das categorias.
+    $(".categoria-button button").click(function () {
+    });
 });
