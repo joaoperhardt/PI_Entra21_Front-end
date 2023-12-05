@@ -18,4 +18,13 @@ $(function () {
     $("form").submit(function (event) {
         event.preventDefault();
 
+        // pega os dados preenchidos.
+        const dadosFormulario = {};
+        $("form :input").each(function () {
+            dadosFormulario[this.id] = $(this).val();
+        });
+
+        // exibe no console o que foi preenchido.
+        console.log("Dados do formulário:", dadosFormulario);
+
 });
