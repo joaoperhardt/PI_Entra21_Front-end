@@ -30,7 +30,7 @@ $(() => {
             return;
        }
 
-      
+       $("#data").removeClass("invalid-label")
 
 
        if (!valuesJson.cep){
