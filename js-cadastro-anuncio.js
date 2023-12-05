@@ -27,4 +27,10 @@ $(function () {
         // exibe no console o que foi preenchido.
         console.log("Dados do formulário:", dadosFormulario);
 
+        // pega a categoria que foi clicada e exibe no console.
+        const categoriaSelecionada = $(".categoria-button button.selected").text();
+        console.log("Dados do formulário:", dadosFormulario);
+        console.log("Categoria selecionada:", categoriaSelecionada);
+    });
+    
 });
