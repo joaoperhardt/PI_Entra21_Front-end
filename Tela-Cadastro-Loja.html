@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Cadastro de Loja</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tela-cadastro-loja.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header id="header">
-        <div class="content flex item-center justify-center"><img id="logo" src="./assets/Logo-We-Buy-It.png" alt="Logo-We-Buy-It"></div>
+    <header id="header" class="content flex item-center justify-center">
+        <div class="content flex item-center justify-center"><img id="logo" src="./assets/logo-bolsa.png" alt="logo"></div>
     </header>
     <div id="titulo-cadastro-loja"><h1>Cadastro de Loja</h1></div>
     <div class="content flex item-center justify-center">
@@ -22,7 +23,7 @@
         <div id="text-areas" class="w-80">
             <div>
             <label for="nome-loja" class="w-80">Nome da Loja</label>
-            <input type="text" id="nome-loja" required>
+            <input type="text" id="nome-loja" >
             </div>
             <div>
                 <label for="descricao-loja">Descrição da loja</label>
@@ -32,7 +33,7 @@
             </div>
             <div>
                 <label for="cep" >CEP da loja<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
-                <input type="text" id="cep" placeholder="XXXXX-XXX" required>    
+                <input type="text" id="cep" placeholder="XXXXX-XXX" >    
             </div>
             <div id="localizacao">
                 <label for="localizacao-loja">Localização da loja</label>

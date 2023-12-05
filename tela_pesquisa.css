@@ -1,0 +1,29 @@
+.filter {
+    margin-top: 24px;
+    font-size: medium;
+}
+
+.filter h1 {
+    font-weight: bold;
+}
+
+.filter ul {
+    margin-top: 16px;
+    list-style-type: none;
+}
+
+.filter li {
+    margin-top: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.filter li:hover {
+    color: #B35FD0;
+}
+
+#price-filter input::-webkit-outer-spin-button,
+#price-filter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

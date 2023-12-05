@@ -1,0 +1,76 @@
+/* título do cadastro */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6B46C1;
+    margin-bottom: 16px;
+}
+/* campos de entrada */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+/* botões de categoria */
+button {
+    background-color: #cbd5e0;
+    color: #2d3748;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #a0aec0;
+}
+/* caixas de texto */
+.flex input {
+    margin-right: 8px;
+}
+/* botão de cadastrar anuncio */
+button[type="submit"] {
+    background-color: #6B46C1;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #59339B;
+}
+
+/* Mídia Query para mobile */
+@media (max-width: 390px) {
+    .container {
+        padding: 8px;
+   }
+    h1 {
+        font-size: 20px;
+   }
+    input[type="text"], textarea {
+        padding: 8px;
+        margin-bottom: 12px;
+   }
+    button {
+        padding: 6px 12px;
+        margin-bottom: 6px;
+   }
+    button[type="submit"] {
+        padding: 10px 20px;
+   }
+}
