@@ -517,6 +517,18 @@ body {
       margin: 0;
       padding: 0;
 }
+    .categoria-button button {
+        background-color: #ccc;
+        padding: 8px;
+        margin: 2px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .categoria-button button.selected {
+        background-color: #ff0000; /* cor do botao ao fazer select */
+        color: #fff;}
+
 
 /* Estilizando o cabeçalho */
 .header-logo {

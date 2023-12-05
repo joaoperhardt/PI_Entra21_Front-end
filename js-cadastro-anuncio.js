@@ -1,15 +1,21 @@
+
 $(function () {
+    const anuncio = {
+        titulo: "",
+        descricao: "",
+        categoria: "",
+        tipo: "",
+        valor: "R$ ",
+        quantidadeDisponivel: 10
+    };
 
-    function preencherFormulario() {
+    // preenche as caixas de texto.
+    $.each(anuncio, function (campo, valor) {
+        $("#" + campo).val(valor);
+    });
 
-        const preenchimentoFormulario = {
+    // evento de para enviar formulario.
+    $("form").submit(function (event) {
+        event.preventDefault();
 
-            titulo: "",
-            descricao: "",
-            tipo: "",
-            valor: "R$",
-            quantidadeVoluntarios: "",
-            categoria: ""
-
-        };
 });
