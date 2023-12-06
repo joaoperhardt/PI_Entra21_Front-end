@@ -82,6 +82,10 @@ function InvalidateInput(msg="", id="") {
             InvalidateInput("Contato da loja não informado", "#contato")
             return;
         }
+        else if (valuesJson.contato.length !==11){
+            InvalidateInput("Telefone inválido", "#telefone")
+            return;
+        }
          $("#contato").removeClass("invalid-label")
          
         if (!valuesJson.cpf){
@@ -94,7 +98,25 @@ function InvalidateInput(msg="", id="") {
         }
          $("#cpf-loja").removeClass("invalid-label")
          
-       
+       if (!valuesJson.cnpj){
+            InvalidateInput("CNPJ não informado", "#cnpj-loja")
+            return;
+       }
+       else if (valuesJson.cnpj.length != 14){
+            InvalidateInput("O CNPJ deve conter 14 dígitos, sendo apenas números", "#cnpj-loja")
+            return;
+       }
+        $("#cnpj-loja").removeClass("invalid-label")
+
+       if (!valuesJson.senha){
+            InvalidateInput("Senha não informado", "#senha-confirmar-loja")
+            return;
+       }
+       else if (valuesJson.senha.length <= 8){
+            InvalidateInput("A senha deve conter no mínimo 8 caracteres", "#senha-confirmar-loja")
+            return;
+       } 
+        $("#senha-confirmar-loja").removeClass("invalid-label")
     }
     )
  })
