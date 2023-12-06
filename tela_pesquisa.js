@@ -1,3 +1,22 @@
+function ShowNotifications() {
+    $("#notifications").addClass("show-notifications")
+    return
+}
+
+function HideNotifications() {
+    $("#notifications").removeClass("show-notifications")
+}
+
+function CloseMobileFilters() {
+    $("#mobile-filters-div").addClass("hidden")
+    $("#cards-div").removeClass("hidden")
+}
+
+function ApproveMobileFilters() {
+    $("#mobile-filters-div").addClass("hidden")
+    $("#cards-div").removeClass("hidden")
+}
+
 $(() => {
     $("#filter-icon").click(() => {
         $("#mobile-filters-div").removeClass("hidden")
@@ -5,13 +24,6 @@ $(() => {
         return
     })
 
-    $("#close-mobile-filters-div").click(() => {
-        $("#mobile-filters-div").addClass("hidden")
-        $("#cards-div").removeClass("hidden")
-    })
+    $(".show-notifications").click(HideNotifications())
 
-    $("#approve-mobile-filters-div").click(() => {
-        $("#mobile-filters-div").addClass("hidden")
-        $("#cards-div").removeClass("hidden")
-    })
 })

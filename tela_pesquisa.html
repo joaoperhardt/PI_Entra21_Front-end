@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tela_pesquisa.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,11 +16,13 @@
 <body>
     <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
         <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
-            <span id="header-logo" class="flex cursor-pointer">
-                <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
-                    alt="WeBuyIt logo">
-                <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
-            </span>
+            <a href="./index.html">
+                <span id="header-logo" class="flex cursor-pointer">
+                    <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
+                        alt="WeBuyIt logo">
+                    <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+                </span>
+            </a>
             <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
                 <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
                     type="text" placeholder="Pesquisar" value="camiseta basica">
@@ -27,12 +30,29 @@
             </div>
             <div id="header-icons" class="flex items-center">
                 <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
-                <i class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i>
-                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
-                <i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i>
+                <a href="./carrinho_de_compras.html"><i
+                        class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i></a>
+                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer" onclick="ShowNotifications()"></i>
+                <div id="notifications">
+                    <h1>ABBA Gold Vinil</h1>
+                    <div class="flex items-center">
+                        <h1 >R$</h1>
+                        <h1 class="ml-2 text-[#B35FD0]">450,00</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="las la-user"></i>
+                        <p class=" ml-2">4</p>
+                        <p >/</p>
+                        <p >5</p>
+                    </div>
+                    
+                </div>
+                <a href="./editar_perfil.html"><i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i></a>
             </div>
         </div>
     </header>
+
+
 
     <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
         <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
@@ -252,15 +272,11 @@
         <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col p-1">
 
             <div class="mt-6 flex justify-between items-center">
-                <button id="close-mobile-filters-div" type="button">
-                    <i class="las la-times la-2x p-1"></i>
-                </button>
+                <i class="las la-times la-2x p-1" onclick="CloseMobileFilters()"></i>
                 <h1 class="text-2xl font-bold">Filtros:</h1>
-                <button  id="approve-mobile-filters-div" type="button">
-                    <i class="las la-check la-2x p-1"></i>
-                </button>
+                <i class="las la-check la-2x p-1" onclick="ApproveMobileFilters()"></i>
             </div>
-            
+
 
             <div class="filter">
                 <h1>Gênero</h1>
