@@ -7,10 +7,10 @@ $(() => {
             discountPercentage: $(".discount-tag")[0].innerHTML,
             quantity: parseInt($(".product-quantity-setter")[0].value),
             freight: parseFloat($(".product-freight")[0].innerHTML.replace(",", ".")),
-            totalPrice: (this.price * this.quantity) + this.freight,
             volunteers: parseInt($(".product-volunteers")[0].innerHTML) + 1,
             volunteersNeeded: $(".product-volunteers-needed")[0].innerHTML
         }
+        productJson.totalPrice = (productJson.price * productJson.quantity) + productJson.freight;
         console.log(productJson)
     })
 

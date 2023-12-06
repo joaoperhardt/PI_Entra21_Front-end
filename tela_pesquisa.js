@@ -1,6 +1,5 @@
 function ShowNotifications() {
     $("#notifications").addClass("show-notifications")
-    return
 }
 
 function HideNotifications() {
@@ -23,7 +22,5 @@ $(() => {
         $("#cards-div").addClass("hidden")
         return
     })
-
-    $(".show-notifications").click(HideNotifications())
 
 })
