@@ -1,9 +1,9 @@
-#discount-tag {
+.discount-tag {
     background-color: #B35FD0;
     border-radius: 8px;
 }
 
-#product-quantity-setter select {
+.product-quantity-setter {
     background: #d9d9d9;
     border-radius: 8px;
     -webkit-appearance: none;
@@ -20,12 +20,12 @@
     border-radius: 4px;
 }
 
-#add-to-cart-button {
+.add-to-cart-button {
     border: 2px solid #B35FD0;
 }
 
-#buy-button {
-    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+.buy-button {
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
 }
 
 .product-tag {
@@ -73,10 +73,10 @@
     border-color: #B35FD0;
 }
 
-.imagem-produto {
-    max-width: 264px;
-    max-height: 264px;
-    justify-self: center;
+.imagem-produto{
+   max-width: 264px;
+   max-height: 264px;
+   justify-self: center;
 }
 
 .product-price {
@@ -112,6 +112,6 @@
     margin: 8px;
 }
 
-#img-content {
+#img-content{
     text-align: center;
 }
