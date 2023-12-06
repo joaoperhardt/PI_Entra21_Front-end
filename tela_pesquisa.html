@@ -41,7 +41,7 @@
                 <div class="sub-menu">
                     <ul class="block">
                         <li> <a href="#"> Viagem </a> </li>
-                        <li> <a href="#"> Camping </a> </li>   
+                        <li> <a href="#"> Camping </a> </li>
                         <li> <a href="#"> Praia </a> </li>
                         <li> <a href="#"> Pesca </a> </li>
                         <li> <a href="#"> Serviços </a> </li>
@@ -115,15 +115,16 @@
         </ul>
     </nav>
 
-
-    <div class="main-div h-[screen] lg:mx-[240px] lg:mt-8">
+    <div class="main-div h-[100vh] xl:mx-auto xl:max-w-[1424px] mt-8">
 
         <div class="flex items-center p-1 lg:hidden">
-            <i class="las la-filter la-2x p-1"></i>
+            <button id="filter-icon" type="button">
+                <i class="las la-filter la-2x p-1"></i>
+            </button>
             <h1 class="px-2 my-4 text-2xl float-right">Resultados para "camiseta basica":</h1>
         </div>
 
-        <aside class="hidden lg:block float-left mr-6 max-w-[296px]">
+        <aside id="filters-div" class="hidden lg:block float-left mr-6 max-w-[296px]">
             <div>
                 <h1 class="text-3xl">Resultados para "camiseta basica:"</h1>
                 <h2 class="mt-2">12 produtos</h2>
@@ -247,6 +248,123 @@
                 </ul>
             </div>
         </aside>
+
+        <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col">
+
+            <h1 class="mt-6 text-2xl ml-2 font-bold">Filtros:</h1>
+
+            <div class="filter">
+                <h1>Gênero</h1>
+                <ul>
+                    <li>Masculino</li>
+                    <li>Feminino</li>
+                    <li>Unissex</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Tamanho</h1>
+                <ul>
+                    <li>Infantil</li>
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                    <li>XGG</li>
+                    <li>G1</li>
+                    <li>G2</li>
+                    <li>G3</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Condição</h1>
+                <ul>
+                    <li>Novo</li>
+                    <li>Usado</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Preço</h1>
+                <form id="price-filter" class="flex items-center mt-4 justify-center" action="">
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Min.">
+                    <div class="mx-2">-</div>
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Max.">
+                </form>
+            </div>
+
+            <div class="filter">
+                <h1>Desconto</h1>
+                <ul>
+                    <li>Mais de 5%</li>
+                    <li>Mais de 10%</li>
+                    <li>Mais de 20%</li>
+                    <li>Mais de 30%</li>
+                    <li>Mais de 40%</li>
+                    <li>Mais de 50%</li>
+                    <li>Mais de 60%</li>
+                    <li>Mais de 70%</li>
+                    <li>Mais de 80%</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Voluntários</h1>
+                <ul>
+                    <li>
+                        1.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        2.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        3.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+                    </li>
+
+                    <li>
+                        4.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        5.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <div id="cards-div" class="flex grid grid-cols-2 p-2 gap-2 lg:grid-cols-4">
             <div class="card" id="modelo">
@@ -693,6 +811,8 @@
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="tela_pesquisa.js"></script>
 </body>
 
 </html>
