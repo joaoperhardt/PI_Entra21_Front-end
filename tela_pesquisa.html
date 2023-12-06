@@ -249,9 +249,18 @@
             </div>
         </aside>
 
-        <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col">
+        <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col p-1">
 
-            <h1 class="mt-6 text-2xl ml-2 font-bold">Filtros:</h1>
+            <div class="mt-6 flex justify-between items-center">
+                <button id="close-mobile-filters-div" type="button">
+                    <i class="las la-times la-2x p-1"></i>
+                </button>
+                <h1 class="text-2xl font-bold">Filtros:</h1>
+                <button  id="approve-mobile-filters-div" type="button">
+                    <i class="las la-check la-2x p-1"></i>
+                </button>
+            </div>
+            
 
             <div class="filter">
                 <h1>Gênero</h1>
