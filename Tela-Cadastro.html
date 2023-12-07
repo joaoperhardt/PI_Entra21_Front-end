@@ -9,12 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header id="header" class="content flex item-center justify-center">
-        <div class="content flex item-center justify-center"><img id="logo" src="./assets/logo-bolsa.png" alt="logo"></div>
+    <header id="header" class="w-screen xs:p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center relative flex">
+        <img class="border-collapse items-center justify-center h-16"
+            src="./assets/images/Sem Título-4.png   "
+            alt="Logo">
     </header>
    
     <div id="formulário">
-        <div id="title-cadastro"><h1>Cadastro de Usuário</h1></div>
+        <div id="title-cadastro"><h1 class="text-color-[#B35FD0]">Cadastro de Usuário</h1></div>
         <form id="form1" action="" >
             <div>
                 <div>
@@ -26,7 +28,10 @@
                     <input type="date" id="data" >
                 </div>
                 <div>
-                    <label for="cep" >CEP<a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label>
+                    <div class="flex justify-between items-center">
+                        <label for="cep">CEP</label>
+                        <a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
+                    </div>
                     <input type="text" id="cep" placeholder="XXXXX-XXX" >                
                 </div>
                 <div>
