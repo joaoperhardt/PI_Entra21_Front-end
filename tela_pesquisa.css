@@ -38,16 +38,6 @@
     cursor: pointer;
 }
 
-.card {
-    padding: 8px;
-    border: 2px solid rgba(81, 88, 112, .4);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-}
-
 .card:hover {
     border-color: #B35FD0;
 }
