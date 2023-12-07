@@ -10,7 +10,6 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="editar_perfil.js">
    
 </head>
 
@@ -52,16 +51,16 @@
             <div class="profile-details">
                 <form class="profile-form mt-5 flex flex-col">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="mobile-name" name="name">
 
                     <label for="cep">CEP</label>
-                    <input id="cep" name="cep">
+                    <input id="mobile-cep" name="cep">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="mobile-email" name="email">
 
                     <label for="phone">Telefone</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="mobile-phone" name="phone">
 
                 </form>
             </div>
@@ -99,16 +98,16 @@
                     <form class="profile-form mt-5 flex flex-col w-[452px]">
 
                         <label class="text-left" for="name">Nome</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="pc-name" name="name">
 
                         <label class="text-left" for="cep">CEP</label>
-                        <input id="cep" name="cep">
+                        <input id="pc-cep" name="cep">
 
                         <label class="text-left" for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="pc-email" name="email">
 
                         <label class="text-left" for="phone">Telefone</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="pc-phone" name="phone">
 
                     </form>
 
@@ -158,7 +157,7 @@
       
             </div>
             <div class="save-button">
-                <button class="purple-button my-8 w-[300px]" type="button">Salvar</button>
+                <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button">Salvar</button>
             </div>
         </div>
     </div>
