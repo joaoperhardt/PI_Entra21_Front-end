@@ -1,11 +1,3 @@
-function ShowNotifications() {
-    $("#notifications").addClass("show-notifications")
-}
-
-function HideNotifications() {
-    $("#notifications").removeClass("show-notifications")
-}
-
 function CloseMobileFilters() {
     $("#mobile-filters-div").addClass("hidden")
     $("#cards-div").removeClass("hidden")
