@@ -1,3 +1,4 @@
+
 /* título do cadastro */
 h1 {
     text-align: center;
@@ -6,6 +7,16 @@ h1 {
     color: #6B46C1;
     margin-bottom: 16px;
 }
+.categoria-button button {
+    background-color: #ccc;
+    padding: 8px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+}
+.categoria-button button.selected {
+    background-color: #ff0000; /* cor do botao ao fazer select */
+    color: #fff;}
 /* campos de entrada */
 label {
     display: block;
