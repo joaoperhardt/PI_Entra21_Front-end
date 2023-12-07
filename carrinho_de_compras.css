@@ -57,8 +57,9 @@ td {
 }
 
 /* botão de finalizar compra */
-#button-finalizar-commpra {
+#button-finalizar-compra {
     color: #ffffff;
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
     padding: 10px;
     border: none;
     border-radius: 10px;
