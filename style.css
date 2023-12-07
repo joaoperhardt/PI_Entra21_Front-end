@@ -84,9 +84,7 @@ nav ul li:hover .sub-menu {
 
 .invalid-label {
     border: 2px solid rgb(190, 29, 83) !important;
-
-}
-/* }@font-face {
+}@font-face {
     font-family: Hammersmith One;
     src: url(./assets/Hammersmith_One/HammersmithOne-Regular.ttf);
 }
@@ -172,4 +170,4 @@ nav ul li:hover .sub-menu {
 
 .invalid-label {
     border: 2px solid rgb(190, 29, 83) !important;
-} */
+}

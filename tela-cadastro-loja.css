@@ -44,7 +44,7 @@ label {
 #cnpj-loja,
 #senha-confirmar-loja {
     background-color: #cccccc67;
-    border-radius: 8px;
+    border-radius: 4%;
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -80,7 +80,7 @@ select:hover {
     position: relative;
     width: 650px;
     display: flex;
-    border-radius: 8px;
+    border-radius: 4%;
     margin-bottom: 50px;
 }
 
