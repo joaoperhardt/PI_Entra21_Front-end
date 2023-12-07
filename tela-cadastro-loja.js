@@ -117,6 +117,7 @@ function InvalidateInput(msg="", id="") {
             return;
        } 
         $("#senha-confirmar-loja").removeClass("invalid-label")
+        
     }
     )
  })
