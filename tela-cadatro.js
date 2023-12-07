@@ -73,8 +73,7 @@ $(() => {
        }
        $("#password").removeClass("invalid-label")
        
-       $("#login-button-link").attr("href", "./index.html")
-    }   
+    }
     )
 })
 

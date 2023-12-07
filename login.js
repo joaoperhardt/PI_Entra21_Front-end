@@ -23,14 +23,14 @@ $(()=>{
             $("#user-password").addClass("invalid-label")
             return
         }
-        else if(loginValues.password.length < 8){
+        else if(loginValues.password.length !== 8){
             alert("Campo de senha não preenchido corretamente!")
             $("#user-password").addClass("invalid-label")
             return
         }
         $("#user-password").removeClass("invalid-label")
 
-        $("#login-button-link").attr("href", "./editar_perfil.html")
+        
       
     })
 })

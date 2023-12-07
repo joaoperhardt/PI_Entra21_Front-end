@@ -5,7 +5,7 @@
 #telefone,
 #password {
     background-color: #cccccc67;
-    border-radius: 8px;
+    border-radius: 4%;
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -13,15 +13,13 @@
 }
 
 #button-continuar {
-    background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
     color: #fff;
-    width: 100%;
-    padding: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 24px;
+    padding: 8px;
+    border-radius: 4%;
     margin-top: 20px;
-    border-radius: 5px;
+    height: 46px;
+    width: 100%;
 }
 
 #form1 {
@@ -42,8 +40,14 @@ label {
 }
 
 #buscar-cep {
-    color: #B35FD0;
+    color: #581c87;
     text-decoration: underline;
-    font-size: 12px;
+    margin-left: 69%;
+    font-size: 9px;
+}
+#header {
+    height: 92px;
+    background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
+    align-content: center;
 }
 
