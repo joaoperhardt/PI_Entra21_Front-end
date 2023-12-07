@@ -1,40 +1,47 @@
 function InvalidateInput(msg="", id="") {
-    alert(msg)
+   alert(msg)
     $(id).addClass("invalid-label")
-}
+  }
 
-$(() => {
-    $(".save-button").click(() => {
-        const values = {
-            name: $('#name')[0].value,
-            cep: $('#cep')[0].value,
-            email: $('#email')[0].value,
-            cellphone: $('#phone')[0].value
-        }
-        console.log(values)
+  $(() => {
+     $(".save-button").click(() => {
+          const values = {
+             name: $('#namet')[0].value,
+              cep: $('#cept')[0].value,
+              email: $('#emailt')[0].value,
+              cellphone: $('#phonet')[0].value
+          }
+          console.log(values)
         
-        if (!values.name) {
-            InvalidateInput("Nome não informado", "#name")
-            return;
-        }
-        $("#name").removeClass("invalid-label")
+          if (!values.name) {
+             InvalidateInput("Nome não informado", "#namet")
+             return;
+          }
+         $("#namet").removeClass("invalid-label")
 
-        if (!values.cep) {
-            InvalidateInput("Nome não informado", "#name")
+         if (!values.cep) {
+              InvalidateInput("Cep não informado", "#cept")
+              return;
+          }
+          else if (values.cep.length !==8){
+            InvalidateInput("Cep necessita ter oito digitos", "#cept")
             return;
-        }
-        $("#cep").removeClass("invalid-label")
+           }
+          $("#cept").removeClass("invalid-label")
 
-        if (!values.email) {
-            InvalidateInput("Nome não informado", "#name")
-            return;
-        }
-        $("#email").removeClass("invalid-label")
+          if (!values.email) {
+             InvalidateInput(" e-mail não informado", "#emailt")
+              return;
+          }
+         
+          $("#emailt").removeClass("invalid-label")
 
-        if (!values.cellphone) {
-            InvalidateInput("Nome não informado", "#name")
+          if (!values.cellphone) {
+             InvalidateInput("Telefone não informado", "#phonet")
             return;
-        }
-        $("#cellphone").removeClass("invalid-label")
-    })
-})
+          }
+         $("#phonet").removeClass("invalid-label")
+      })
+  })
+
+  
