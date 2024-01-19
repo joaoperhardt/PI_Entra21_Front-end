@@ -14,11 +14,110 @@
 </head>
 
 <body>
-    <header id="header" class="w-screen xs:p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center relative flex">
-        <img class="border-collapse items-center justify-center h-16"
-            src="./assets/images/MicrosoftTeams-image.png"
-            alt="Logo">
+    <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+        <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+            <a href="./index.html">
+                <span id="header-logo" class="flex cursor-pointer">
+                    <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
+                        alt="WeBuyIt logo">
+                    <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+                </span>
+            </a>
+            <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
+                    type="text" placeholder="Pesquisar">
+                    <a href="./tela_pesquisa.html"><i class="las la-search flex m-4"></i></a>
+            </div>
+            <div id="header-icons" class="flex items-center">
+                <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
+                <a href="./carrinho_de_compras.html"><i
+                        class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i></a>
+                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+    
+                <a href="./editar_perfil.html"><i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i></a>
+            </div>
+        </div>
     </header>
+    <nav class="w-screen text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+        <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+            <li class="hover:bg-[#3C4378] rounded-lg" >
+                <a href="#" class="hover:text-yellow-400">Categorias</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Viagem </a> </li>
+                        <li> <a href="#"> Camping </a> </li>
+                        <li> <a href="#"> Praia </a> </li>
+                        <li> <a href="#"> Pesca </a> </li>
+                        <li> <a href="#"> Serviços </a> </li>
+                    </ul>
+                </div>
+            </li>
+    
+            <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Eletrônicos</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Tv </a> </li>
+                        <li> <a href="#"> Celular </a> </li>
+                        <li> <a href="#"> Home-Theater </a> </li>
+                        <li> <a href="#"> Monitor </a> </li>
+                        <li> <a href="#"> Notebook</a> </li>
+                    </ul>
+                </div>
+    
+    
+            </li>
+    
+            <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Livros</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Ficção </a> </li>
+                        <li> <a href="#"> Drama </a> </li>
+                        <li> <a href="#"> Romance </a> </li>
+                        <li> <a href="#"> Policial </a> </li>
+                        <li> <a href="#"> Clássicos</a> </li>
+                    </ul>
+                </div>
+    
+            </li>
+    
+            <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Games</a>
+                <div class="sub-menu">
+                    <ul class="block   ">
+                        <li> <a href="#"> Playstation 5 </a> </li>
+                        <li> <a href="#"> Xbox One </a> </li>
+                        <li> <a href="#"> Nintendo Switch </a> </li>
+                        <li> <a href="#"> Playstation 4 </a> </li>
+                        <li> <a href="#"> Periféricos</a> </li>
+                    </ul>
+                </div>
+    
+            </li>
+    
+            <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Casa</a>
+                <div class="sub-menu">
+                    <ul class="block  ">
+                        <li> <a href="#"> Mesa </a> </li>
+                        <li> <a href="#"> Banho </a> </li>
+                        <li> <a href="#"> Toalha </a> </li>
+                        <li> <a href="#"> Tapetes </a> </li>
+                        <li> <a href="#"> Cortinas</a> </li>
+                    </ul>
+                </div>
+    
+            </li>
+    
+            <li> <a href="./index.html" class="hover:text-yellow-400">Ofertas</a>
+    
+    
+            </li>
+    
+            <li> <a href="./cadastro-produto.html" class="hover:text-yellow-400">Vender</a>
+    
+    
+            </li>
+    
+        </ul>
+    </nav>
 
     <div class="flex flex-col items-center justify-self-center w-full mr-8">
         <div class="login-container text-left mt-12 p-8 justify-center w-screen lg:w-[400px]">

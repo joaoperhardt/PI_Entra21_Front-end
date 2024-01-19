@@ -4,7 +4,7 @@
 }
 
 * {
-    font-family: Hammersmith One !important;
+    font-family: Hammersmith One;
     font-size: 16px;
 }
 
@@ -52,11 +52,10 @@ nav ul li {
 }
 
 .sub-menu {
-    width: 144px;
     display: none;
     text-align: center;
-    border-radius: 12px;
-    color: #000;
+    border-radius: 8px;
+    color: #ffffff;
 }
 
 .sub-menu li {
@@ -64,15 +63,15 @@ nav ul li {
 }
 
 .sub-menu li:hover {
-    background-color: #B35FD0;
+    background-color: #858ed4;
 }
 
 nav ul li:hover .sub-menu {
     display: block;
     position: absolute;
-    background-color: rgb(211, 211, 211);
+    background-color: #414881;
     margin-top: 15px;
-    margin-left: -38px;
+    margin-left: -32px;
 }
 
 .login-container {
