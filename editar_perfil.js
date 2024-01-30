@@ -69,7 +69,7 @@ $(() => {
             InvalidateInput("CEP não informado", "#mobile-cep")
             return;
         }
-        else if (values.cep.length < 8) {
+        else if (values.cep.length !== 8) {
             InvalidateInput("CEP inválido", "#mobile-cep")
             return
         }
